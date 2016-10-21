@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "dc0c4fa4-fdf5-475d-9637-ff4dfcd45e28++2919" : {
+
+    },
+    "dc0c4fa4-fdf5-475d-9637-ff4dfcd45e28++7634" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "dc0c4fa4-fdf5-475d-9637-ff4dfcd45e28++2919" : 0,
+    "dc0c4fa4-fdf5-475d-9637-ff4dfcd45e28++7634" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9DF40052-C55C-4A62-9D1D-728BBEA5E09E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "dc0c4fa4-fdf5-475d-9637-ff4dfcd45e28++2919" : "BusinessApp_10%E6%9C%88%E4%BF%AE%E6%94%B9%E7%89%88\/BusinessApp\/Categories\/NSDate+Helper\/",
+    "dc0c4fa4-fdf5-475d-9637-ff4dfcd45e28++7634" : "BusinessApp_10%E6%9C%88%E4%BF%AE%E6%94%B9%E7%89%88\/BusinessApp\/Categories\/ActionSheetPicker\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BusinessApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BusinessApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/101.201.197.13",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "dc0c4fa4-fdf5-475d-9637-ff4dfcd45e28++2919"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/101.201.197.13",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "dc0c4fa4-fdf5-475d-9637-ff4dfcd45e28++7634"
+    }
+  ]
+}
