@@ -1,0 +1,25 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'BusinessApp' do
+pod 'SDWebImage'
+pod 'ReactiveCocoa'
+pod 'MBProgressHUD'
+pod 'Reachability'
+pod 'TTTAttributedLabel'
+pod 'MJRefresh'
+pod 'DateTools'
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'MGSwipeTableCell'
+pod 'DZNEmptyDataSet'
+pod 'UMengSocial'
+pod 'SDCycleScrollView'
+pod 'IQKeyboardManager'
+pod 'WebViewJavascriptBridge'
+pod 'NJKWebViewProgress'
+pod 'UMengAnalytics-NO-IDFA'
+end
