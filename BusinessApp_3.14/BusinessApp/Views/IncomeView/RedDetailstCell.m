@@ -123,6 +123,7 @@
     NSString *add = @"+";
     NSString *amountStr = [NSString stringWithFormat:@"%0.2f",[model.amount floatValue]];
     NSString *str = [amountStr substringToIndex:1];
+    
     if ([str isEqualToString:@"-"]) {
         self.moneyLabel.text = amountStr;
         self.moneyLabel.textColor = [UIColor colorWithHex:0x00BB00];
@@ -133,26 +134,28 @@
 
     
     
-    if (model.order_id == nil) {
-        self.commentLabel.text = @"奖励";
-    }else{
-        if ([model.type integerValue] == 1) {
-            self.commentLabel.text = @"订单";
-        }else if ([model.type integerValue] == 2){
-            self.commentLabel.text = @"采购 ";
-        }else if ([model.type integerValue] == 3){
-            if ([str isEqualToString:@"-"]) {
-                self.commentLabel.text = @"红包消费";
-            }else{
-                self.commentLabel.text = @"红包退还";
-            }
-        }else if ([model.type integerValue] == 4){
-            self.commentLabel.text = @"代金券";
-        }else if (model.type.length <= 0){
-            self.commentLabel.text = @"";
-        }
-        
-    }
+    self.commentLabel.text = model.memo;
+//    
+//    if (model.order_id == nil) {
+//        self.commentLabel.text = @"奖励";
+//    }else{
+//        if ([model.type integerValue] == 1) {
+//            self.commentLabel.text = @"订单";
+//        }else if ([model.type integerValue] == 2){
+//            self.commentLabel.text = @"采购 ";
+//        }else if ([model.type integerValue] == 3){
+//            if ([str isEqualToString:@"-"]) {
+//                self.commentLabel.text = @"红包消费";
+//            }else{
+//                self.commentLabel.text = @"红包退还";
+//            }
+//        }else if ([model.type integerValue] == 4){
+//            self.commentLabel.text = @"代金券";
+//        }else if (model.type.length <= 0){
+//            self.commentLabel.text = @"";
+//        }
+//        
+//    }
 
 
 }

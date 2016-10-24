@@ -27,9 +27,17 @@
     [_logoImage sd_setImageWithURL:[NSURL URLWithString:model.cover_img] placeholderImage:[UIImage imageNamed:@"store_header"]];
     
     _titleLabel.text = model.goods_name;
-    
+    if ([type isEqualToString:@"2"]) {
+        if ([model.sale_flag integerValue] == 1) {
+            _priceLabel.text = @"售价:";
+        }else{
+            _priceLabel.text = @"建议售价:";
+        }
+    }else{
         _priceLabel.text = @"售价:";
-
+    }
+    
+    
     _priceMoneyLabel.text = [NSString stringWithFormat:@"¥%@",model.real_price];
     
     if (spetype == 1) {
@@ -181,80 +189,6 @@
                 }
     }
     
-    
-//    if (nowstatus == 0) {
-//        
-//        if ([model.sale_flag integerValue] == 3) {
-//            
-//            _applyBtn.hidden = NO;
-//            [_applyBtn setTitle:@" 参加 " forState:UIControlStateNormal];
-//            _statusLabel.hidden = YES;
-//            _statusLabel.text = nil;
-//            _saleLabel.text = nil;
-//            
-//        }else if([model.sale_flag integerValue] == 0){
-//        
-//            _applyBtn.hidden = YES;
-//            _statusLabel.hidden = NO;
-//            _statusLabel.text = @"审核中";
-//            _saleLabel.text = nil;
-//        }else if([model.sale_flag integerValue] == 2){
-//        
-//            _applyBtn.hidden = NO;
-//            _statusLabel.hidden = YES;
-//            _statusLabel.text = nil;
-//            [_applyBtn setTitle:@" 重新申请 " forState:UIControlStateNormal];
-//            _saleLabel.text = nil;
-//
-//        }else if ([model.sale_flag integerValue] == 4){
-//            
-//            
-//            
-//        }else{
-//            _applyBtn.hidden = YES;
-//            _statusLabel.hidden = YES;
-//            _statusLabel.text = nil;
-//
-//            NSString *saleString = [NSString stringWithFormat:@"已售:%@  库存:%@",model.sale_num,model.total_stock];
-//            
-//            NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:saleString];
-//            
-//            [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(3, model.sale_num.length)];
-//            
-//            [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(saleString.length-model.total_stock.length, model.total_stock.length)];
-//            
-//            _saleLabel.attributedText = attributedString;
-//        }
-//        
-//        
-//    }else{
-//    
-//        if ([model.sale_flag integerValue] != 1) {
-//            
-//            _applyBtn.hidden = YES;
-//            _statusLabel.hidden = NO;
-//            _statusLabel.text = @"未参加";
-//            _saleLabel.text = nil;
-//            
-//        }else{
-//            
-//            _applyBtn.hidden = YES;
-//            _statusLabel.hidden = YES;
-//            _statusLabel.text = nil;
-//
-//            NSString *saleString = [NSString stringWithFormat:@"已售:%@  库存:%@",model.sale_num,model.total_stock];
-//        
-//            NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:saleString];
-//            
-//            [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xFD5B44] range:NSMakeRange(3, model.sale_num.length)];
-//            
-//            [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xFD5B44] range:NSMakeRange(saleString.length-model.total_stock.length, model.total_stock.length)];
-//            
-//            _saleLabel.attributedText = attributedString;
-//        }
-//    
-//    
-//    }
 
 }
 
