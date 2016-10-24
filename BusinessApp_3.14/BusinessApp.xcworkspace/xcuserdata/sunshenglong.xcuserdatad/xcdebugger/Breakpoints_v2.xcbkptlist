@@ -9,123 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BusinessApp/Controllers/GoodsViewController/SaleDetailViewController.m"
-            timestampString = "496240798.179637"
+            filePath = "BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
+            timestampString = "498991482.432703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "534"
-            endingLineNumber = "534"
-            landmarkName = "-shareAction"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusinessApp/Controllers/GoodsViewController/SaleDetailViewController.m"
-            timestampString = "496240798.936444"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "536"
-            endingLineNumber = "536"
-            landmarkName = "-shareAction"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusinessApp/Controllers/GoodsViewController/SaleDetailViewController.m"
-            timestampString = "496240800.212336"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "548"
-            endingLineNumber = "548"
-            landmarkName = "-shareAction"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusinessApp/Controllers/GoodsViewController/SaleDetailViewController.m"
-            timestampString = "496240801.27879"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "538"
-            endingLineNumber = "538"
-            landmarkName = "-shareAction"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SaleDetailViewController shareAction]"
-                  moduleName = "BusinessApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SaleDetailViewController.m"
-                  timestampString = "498977179.990615"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "538"
-                  endingLineNumber = "538"
-                  offsetFromSymbolStart = "231">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__39-[SaleDetailViewController shareAction]_block_invoke"
-                  moduleName = "BusinessApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SaleDetailViewController.m"
-                  timestampString = "498977179.992865"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "538"
-                  endingLineNumber = "538"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__39-[SaleDetailViewController shareAction]_block_invoke_2"
-                  moduleName = "BusinessApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SaleDetailViewController.m"
-                  timestampString = "498977179.998179"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "540"
-                  endingLineNumber = "540"
-                  offsetFromSymbolStart = "54">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusinessApp/Controllers/GoodsViewController/SaleDetailViewController.m"
-            timestampString = "496240804.340328"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "556"
-            endingLineNumber = "556"
+            startingLineNumber = "591"
+            endingLineNumber = "591"
             landmarkName = "-shareAction"
             landmarkType = "7">
          </BreakpointContent>
@@ -137,59 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
-            timestampString = "498647275.476458"
+            timestampString = "498991482.432703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "573"
-            endingLineNumber = "573"
-            landmarkName = "-shareAction"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SpecialDetailViewController shareAction]"
-                  moduleName = "BusinessApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
-                  timestampString = "498977180.015466"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "573"
-                  endingLineNumber = "573"
-                  offsetFromSymbolStart = "98">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[SpecialDetailViewController shareAction]_block_invoke"
-                  moduleName = "BusinessApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
-                  timestampString = "498977180.017739"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "575"
-                  endingLineNumber = "575"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
-            timestampString = "498647275.476458"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "668"
-            endingLineNumber = "668"
+            startingLineNumber = "686"
+            endingLineNumber = "686"
             landmarkName = "-didFinishGetUMSocialDataInViewController:"
             landmarkType = "7">
          </BreakpointContent>
@@ -269,7 +110,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/RedListViewController.m"
-                  timestampString = "498977180.055532"
+                  timestampString = "498991619.739934"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "128"
@@ -284,7 +125,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/RedListViewController.m"
-                  timestampString = "498977180.05754"
+                  timestampString = "498991619.742339"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "128"
@@ -317,7 +158,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/StoreViewController/RevisedPriceVC.m"
-                  timestampString = "498977180.062431"
+                  timestampString = "498991619.74699"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
@@ -332,7 +173,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/StoreViewController/RevisedPriceVC.m"
-                  timestampString = "498977180.064899"
+                  timestampString = "498991619.749313"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
@@ -347,7 +188,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/StoreViewController/RevisedPriceVC.m"
-                  timestampString = "498977180.067023"
+                  timestampString = "498991619.752058"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "112"
@@ -572,7 +413,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Categories/PerfecrGoods/Controller/ChooseViewController.m"
-                  timestampString = "498977180.132862"
+                  timestampString = "498991619.806426"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "162"
@@ -587,7 +428,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Categories/PerfecrGoods/Controller/ChooseViewController.m"
-                  timestampString = "498977180.135308"
+                  timestampString = "498991619.809093"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "162"
@@ -620,7 +461,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SalesAwardViewController.m"
-                  timestampString = "498977180.139383"
+                  timestampString = "498991619.813783"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "232"
@@ -635,7 +476,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SalesAwardViewController.m"
-                  timestampString = "498977180.142259"
+                  timestampString = "498991619.816238"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "232"
@@ -668,7 +509,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/InventoryListController.m"
-                  timestampString = "498977180.147064"
+                  timestampString = "498991619.821637"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "210"
@@ -683,7 +524,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/InventoryListController.m"
-                  timestampString = "498977180.14898"
+                  timestampString = "498991619.823453"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "210"
@@ -716,7 +557,7 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/IncomeDetailController.m"
-                  timestampString = "498977180.153437"
+                  timestampString = "498991619.827324"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "240"
@@ -731,12 +572,76 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/IncomeDetailController.m"
-                  timestampString = "498977180.155625"
+                  timestampString = "498991619.830316"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "240"
                   endingLineNumber = "240"
                   offsetFromSymbolStart = "1285">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BusinessApp/Controllers/GoodsViewController/HistoryViewController.m"
+            timestampString = "498989678.373076"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "-loadData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
+            timestampString = "498991432.712505"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "-loadData"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SpecialDetailViewController loadData]"
+                  moduleName = "BusinessApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
+                  timestampString = "498991619.838871"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "205"
+                  endingLineNumber = "205"
+                  offsetFromSymbolStart = "261">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__39-[SpecialDetailViewController loadData]_block_invoke"
+                  moduleName = "BusinessApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
+                  timestampString = "498991619.841105"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "51">
                </Location>
             </Locations>
          </BreakpointContent>

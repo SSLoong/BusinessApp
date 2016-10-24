@@ -10,6 +10,8 @@
 #import "ActivityModel.h"
 #import "ActivityCell.h"
 #import "SpecialDetailViewController.h"
+#import "HistoryViewController.h"
+
 
 @interface ActivitySpecialController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
@@ -305,8 +307,9 @@
 
 - (void)lishiAction{
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"尚未开通此功能" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles: nil];
-    [alertView show];
+    HistoryViewController *vc = [[HistoryViewController alloc]init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

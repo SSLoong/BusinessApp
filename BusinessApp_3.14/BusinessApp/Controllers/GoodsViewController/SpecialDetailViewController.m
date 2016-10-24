@@ -194,7 +194,15 @@
 
 -(void)loadData{
     
-    [AFHttpTool goodsSpecialDetail:Store_id special_id:_model.special_id page:_page progress:^(NSProgress *progress) {
+    NSString *speciaID = [[NSString alloc]init];;
+    
+    if (self.special_id.length > 0) {
+        speciaID = self.special_id;
+    }else{
+        speciaID = _model.special_id;
+    }
+    
+    [AFHttpTool goodsSpecialDetail:Store_id special_id:speciaID page:_page progress:^(NSProgress *progress) {
         NSLog(@"%@",progress);
     } success:^(id response) {
         
@@ -570,7 +578,17 @@
     
     _hud = [AppUtil createHUD];
     
-    [AFHttpTool specialShare:Store_id special_id:_model.special_id progress:^(NSProgress *progress) {
+    NSString *speciaID = [[NSString alloc]init];;
+    
+    if (self.special_id.length > 0) {
+        speciaID = self.special_id;
+    }else{
+        speciaID = _model.special_id;
+    }
+
+    
+    
+    [AFHttpTool specialShare:Store_id special_id:speciaID progress:^(NSProgress *progress) {
         
     } success:^(id response) {
         

@@ -13,6 +13,8 @@
 #import "DateView.h"
 //#import "ActivityModel.h"
 #import "SaleDetailViewController.h"
+#import "SpecialDetailViewController.h"
+
 
 @interface HistoryViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
@@ -432,7 +434,7 @@
     
      HistoryModel *model= _dataArray[indexPath.row];
     
-    SaleDetailViewController * vc= [[SaleDetailViewController alloc]init];
+    SpecialDetailViewController * vc= [[SpecialDetailViewController alloc]init];
     
     vc.special_id = model.special_id;
     

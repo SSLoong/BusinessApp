@@ -13,4 +13,6 @@
 
 @property(nonatomic,strong)ActivityModel *model;
 
+@property (nonatomic, strong) NSString *special_id;
+
 @end
