@@ -215,9 +215,9 @@
     UIImage * image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     
     [self.imagesArr addObject:image];
-    if (self.imagesArr.count > 1) {
-        [self.imagesArr removeObjectAtIndex:0];
-    }
+//    if (self.imagesArr.count > 3) {
+//        [self.imagesArr removeObjectAtIndex:2];
+//    }
     [self upDateImage];
 }
 
