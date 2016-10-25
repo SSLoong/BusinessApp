@@ -107,11 +107,12 @@ NSString * const ktype = @"type";//商铺类型
     self.tableView.sectionHeaderHeight = 15;
     self.tableView.sectionFooterHeight = 0;
     self.tableView.contentInset = UIEdgeInsetsMake(-36, 0, 0, 0);
+    self.tableView.allowsSelection = NO;
     
     if (kDevice_Is_iPhone5) {
-        self.tableView.allowsSelection = YES;
+        self.tableView.scrollEnabled = YES;
     }else{
-        self.tableView.allowsSelection = NO;
+        self.tableView.scrollEnabled = NO;
     }
     
     
