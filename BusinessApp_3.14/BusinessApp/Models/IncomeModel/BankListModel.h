@@ -18,4 +18,9 @@
 
 @property(nonatomic,copy)NSString *open_branch;
 
+@property(nonatomic,copy)NSString *name;
+
+@property(nonatomic,copy)NSString *bank_phone;
+
+
 @end

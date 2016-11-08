@@ -321,9 +321,17 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    
-    
-    
+    if (indexPath.section == 0) {
+        BankListModel *model = self.dataArray[indexPath.row];
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"AddBank" bundle:nil];
+        
+        AddBankViewController *vc = [storyboard  instantiateViewControllerWithIdentifier:@"AddBank"];
+        vc.modle = model;
+        //[vc configBankListModel:model];
+        [self.navigationController pushViewController:vc animated:YES];
+
+    }
     
     if (indexPath.section == 1) {
         

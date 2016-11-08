@@ -13,11 +13,14 @@
  *  @date 2016-10-10
  */
 #import <UIKit/UIKit.h>
+#import "BankListModel.h"
 
 typedef void(^addSuccess)();
 
 @interface AddBankViewController : UITableViewController
 
 @property(nonatomic,copy)addSuccess addSuccess;
+
+@property (nonatomic, strong) BankListModel *modle;
 
 @end

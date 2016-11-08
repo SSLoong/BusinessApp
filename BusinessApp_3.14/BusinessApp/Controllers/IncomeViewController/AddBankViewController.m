@@ -21,6 +21,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *bankLabel;
 
+@property (weak, nonatomic) IBOutlet UITextField *bankField;
+
 @property(nonatomic,copy)NSString *codeString;
 
 
@@ -31,6 +33,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    if (self.modle !=nil) {
+        self.nameField.text = _modle.name;
+        [self.nameField setEnabled:NO];
+        
+        self.cardFiled.text = _modle.bank_card;
+        [self.cardFiled setEnabled:NO];
+        
+        self.phoneFiled.text =  _modle.bank_phone;
+        [self.phoneFiled setEnabled:NO];
+        
+        self.bankField.text =@"";
+        [self.bankField setEnabled:NO];
+        
+        self.bankLabel.text = _modle.open_branch;
+        self.title = @"银行卡详情";
+        
+    }
     
     self.title = @"添加银行卡";
 
@@ -50,12 +70,13 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
     
     __weak typeof(self) weakSelf = self;
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section==0) {
-        
+        if (self.modle != nil) {
+            return;
+        }
         if (indexPath.row ==2) {
             
             BindBanksViewController *vc = [[BindBanksViewController alloc]init];
@@ -72,8 +93,12 @@
         }
 
     }else{
-
         
+        if (self.modle != nil) {
+            [self.navigationController popViewControllerAnimated:YES];
+            return;
+        }
+
         _hud = [AppUtil createHUD];
         _hud.labelText = @"正在添加...";
         _hud.userInteractionEnabled = NO;
@@ -81,7 +106,6 @@
         if (![self check]) {
             return;
         }
-
 
         [AFHttpTool incomeAddBank:Store_id
                         bank_code:_codeString
@@ -176,6 +200,24 @@
     return YES;
 
 }
+
+- (void)configBankListModel:(BankListModel *)modle{
+    
+    self.nameField.text = modle.name;
+    
+    self.cardFiled.text = modle.bank_card;
+    
+    self.phoneFiled.text =  modle.bank_phone;
+    
+    self.bankLabel.text = modle.open_branch;
+    
+    self.tableView.allowsSelection = NO;
+    
+    
+}
+
+
+
 
 
 
