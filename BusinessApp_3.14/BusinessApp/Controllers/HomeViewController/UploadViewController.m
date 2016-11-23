@@ -107,7 +107,7 @@
     _lineView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_lineView];
     
-    _storeLabel = [[UILabel alloc]initWithFrame:CGRectMake(15, 23, 56, 14)];
+    _storeLabel = [[UILabel alloc]initWithFrame:CGRectMake(15, 23, 60, 14)];
     _storeLabel.text = @"门店照片";
     _storeLabel.font = [UIFont systemFontOfSize:14];
     _storeLabel.textColor = [UIColor blackColor];

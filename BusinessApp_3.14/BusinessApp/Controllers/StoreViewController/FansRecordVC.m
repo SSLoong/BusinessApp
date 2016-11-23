@@ -11,6 +11,7 @@
 #import "EditorNameVC.h"
 #import "FansDetailsVC.h"
 #import "FansScreenVC.h"
+#import "FansInfoVC.h"
 
 @interface FansRecordVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -52,12 +53,11 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-    self.tableView.allowsSelection = NO;
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.automaticallyAdjustsScrollViewInsets = YES;
     
-    [self.tableView registerNib: [UINib nibWithNibName:@"FansRcordCell" bundle:nil] forCellReuseIdentifier:@"cell1"];
+    [self.tableView registerNib: [UINib nibWithNibName:@"FansRcordCell" bundle:nil] forCellReuseIdentifier:@"FansRcordCellID"];
     
     WS(weakSelf)
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -167,19 +167,27 @@
     return self.data.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
+
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    FansRcordCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
+    //FansRcordCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
+     static NSString *cellID = @"FansRcordCellID";
+    FansRcordCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     cell.dic = self.data[indexPath.row];
-    WS(weakSelf);
-    cell.buttonBlcok = ^(){
-        [weakSelf pushToEditier:indexPath];
-    };
-    cell.detailsBlcok = ^(){
-        [weakSelf pushToDetails:indexPath];
-    };
+
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    FansInfoVC *vc = [[FansInfoVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 

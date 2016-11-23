@@ -2,7 +2,7 @@
 //  FansRcordCell.h
 //  BusinessApp
 //
-//  Created by wangyebin on 16/8/19.
+//  Created by 孙升隆 on 2016/11/18.
 //  Copyright © 2016年 Perfect. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 @interface FansRcordCell : UITableViewCell
 
-@property (strong, nonatomic) NSDictionary * dic;
-@property (nonatomic, copy) void (^buttonBlcok)();
-@property (nonatomic, copy) void (^detailsBlcok)();
+@property (nonatomic, strong) NSDictionary *dic;
+
+- (void)configDictionary:(NSDictionary *)dic;
 
 @end

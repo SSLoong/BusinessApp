@@ -213,9 +213,23 @@
 		5B150C5B1D910C9500159D8B /* SourceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B150C5A1D910C9500159D8B /* SourceListViewController.m */; };
 		5B150C5E1D9286E600159D8B /* ApplyForActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B150C5D1D9286E600159D8B /* ApplyForActivityVC.m */; };
 		5B150C611D940CBB00159D8B /* goodsDicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B150C601D940CBB00159D8B /* goodsDicModel.m */; };
+		5B16F9071DE2D67500A646CF /* FansNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16F9051DE2D67500A646CF /* FansNameCell.m */; };
+		5B16F9081DE2D67500A646CF /* FansNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B16F9061DE2D67500A646CF /* FansNameCell.xib */; };
+		5B16F9141DE2D6EF00A646CF /* FansConsumeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16F9121DE2D6EF00A646CF /* FansConsumeCell.m */; };
+		5B16F9151DE2D6EF00A646CF /* FansConsumeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B16F9131DE2D6EF00A646CF /* FansConsumeCell.xib */; };
+		5B16F9191DE2D70400A646CF /* FansStoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16F9171DE2D70400A646CF /* FansStoreCell.m */; };
+		5B16F91A1DE2D70400A646CF /* FansStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B16F9181DE2D70400A646CF /* FansStoreCell.xib */; };
+		5B16F91E1DE2D72200A646CF /* FansGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16F91C1DE2D72200A646CF /* FansGoodsCell.m */; };
+		5B16F91F1DE2D72200A646CF /* FansGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B16F91D1DE2D72200A646CF /* FansGoodsCell.xib */; };
+		5B16F9221DE31CF000A646CF /* ChooseTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16F9211DE31CF000A646CF /* ChooseTimeVC.m */; };
 		5B37E75F1DA8F1EE007D8660 /* ListDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B37E75C1DA8F1EE007D8660 /* ListDataViewController.m */; };
 		5B37E7601DA8F1EE007D8660 /* RedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B37E75E1DA8F1EE007D8660 /* RedListViewController.m */; };
 		5B37E7631DA8F2A7007D8660 /* RedDetailstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B37E7621DA8F2A7007D8660 /* RedDetailstCell.m */; };
+		5B883A2B1DDEE68200E1E4D7 /* FansRcordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B883A291DDEE68200E1E4D7 /* FansRcordCell.m */; };
+		5B883A2C1DDEE68200E1E4D7 /* FansRcordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B883A2A1DDEE68200E1E4D7 /* FansRcordCell.xib */; };
+		5B883A321DDEFAB200E1E4D7 /* BENTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B883A2F1DDEFAB200E1E4D7 /* BENTag.m */; };
+		5B883A331DDEFAB200E1E4D7 /* BENTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B883A311DDEFAB200E1E4D7 /* BENTagsView.m */; };
+		5B883A361DDF1EFE00E1E4D7 /* FansInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B883A351DDF1EFE00E1E4D7 /* FansInfoVC.m */; };
 		5BBCDF831DAB69BA00697AC9 /* RewardListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCDF821DAB69BA00697AC9 /* RewardListModel.m */; };
 		5BBCDF861DABA7B200697AC9 /* DateSiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCDF851DABA7B200697AC9 /* DateSiftViewController.m */; };
 		5BBCDF891DABAB6D00697AC9 /* DateSiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCDF881DABAB6D00697AC9 /* DateSiftCell.m */; };
@@ -293,8 +307,6 @@
 		6F2D61811D7D6AD6003D6C73 /* FansDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2D61801D7D6AD6003D6C73 /* FansDetailsVC.m */; };
 		6F2D61851D7D6C2E003D6C73 /* FansDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2D61831D7D6C2E003D6C73 /* FansDetailsCell.m */; };
 		6F2D61861D7D6C2E003D6C73 /* FansDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2D61841D7D6C2E003D6C73 /* FansDetailsCell.xib */; };
-		6F42E4431D66EAE4001DF20C /* FansRcordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F42E4411D66EAE4001DF20C /* FansRcordCell.m */; };
-		6F42E4441D66EAE4001DF20C /* FansRcordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F42E4421D66EAE4001DF20C /* FansRcordCell.xib */; };
 		6F8C7BBB1D76F2240092BA05 /* LtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8C7BBA1D76F2240092BA05 /* LtView.m */; };
 		6FBDE21C1D7E77400008BA16 /* libUMessage_Sdk_1.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBDE21A1D7E77400008BA16 /* libUMessage_Sdk_1.3.0.a */; };
 		6FBF51691D7415F200176009 /* OutputModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF51681D7415F200176009 /* OutputModel.m */; };
@@ -694,12 +706,35 @@
 		5B150C5D1D9286E600159D8B /* ApplyForActivityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplyForActivityVC.m; sourceTree = "<group>"; };
 		5B150C5F1D940CBB00159D8B /* goodsDicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goodsDicModel.h; sourceTree = "<group>"; };
 		5B150C601D940CBB00159D8B /* goodsDicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = goodsDicModel.m; sourceTree = "<group>"; };
+		5B16F9041DE2D67500A646CF /* FansNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansNameCell.h; sourceTree = "<group>"; };
+		5B16F9051DE2D67500A646CF /* FansNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansNameCell.m; sourceTree = "<group>"; };
+		5B16F9061DE2D67500A646CF /* FansNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FansNameCell.xib; sourceTree = "<group>"; };
+		5B16F9111DE2D6EF00A646CF /* FansConsumeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansConsumeCell.h; sourceTree = "<group>"; };
+		5B16F9121DE2D6EF00A646CF /* FansConsumeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansConsumeCell.m; sourceTree = "<group>"; };
+		5B16F9131DE2D6EF00A646CF /* FansConsumeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FansConsumeCell.xib; sourceTree = "<group>"; };
+		5B16F9161DE2D70400A646CF /* FansStoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansStoreCell.h; sourceTree = "<group>"; };
+		5B16F9171DE2D70400A646CF /* FansStoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansStoreCell.m; sourceTree = "<group>"; };
+		5B16F9181DE2D70400A646CF /* FansStoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FansStoreCell.xib; sourceTree = "<group>"; };
+		5B16F91B1DE2D72200A646CF /* FansGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansGoodsCell.h; sourceTree = "<group>"; };
+		5B16F91C1DE2D72200A646CF /* FansGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansGoodsCell.m; sourceTree = "<group>"; };
+		5B16F91D1DE2D72200A646CF /* FansGoodsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FansGoodsCell.xib; sourceTree = "<group>"; };
+		5B16F9201DE31CF000A646CF /* ChooseTimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseTimeVC.h; sourceTree = "<group>"; };
+		5B16F9211DE31CF000A646CF /* ChooseTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseTimeVC.m; sourceTree = "<group>"; };
 		5B37E75B1DA8F1EE007D8660 /* ListDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDataViewController.h; sourceTree = "<group>"; };
 		5B37E75C1DA8F1EE007D8660 /* ListDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDataViewController.m; sourceTree = "<group>"; };
 		5B37E75D1DA8F1EE007D8660 /* RedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedListViewController.h; sourceTree = "<group>"; };
 		5B37E75E1DA8F1EE007D8660 /* RedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedListViewController.m; sourceTree = "<group>"; };
 		5B37E7611DA8F2A7007D8660 /* RedDetailstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedDetailstCell.h; sourceTree = "<group>"; };
 		5B37E7621DA8F2A7007D8660 /* RedDetailstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedDetailstCell.m; sourceTree = "<group>"; };
+		5B883A281DDEE68200E1E4D7 /* FansRcordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansRcordCell.h; sourceTree = "<group>"; };
+		5B883A291DDEE68200E1E4D7 /* FansRcordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansRcordCell.m; sourceTree = "<group>"; };
+		5B883A2A1DDEE68200E1E4D7 /* FansRcordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FansRcordCell.xib; sourceTree = "<group>"; };
+		5B883A2E1DDEFAB200E1E4D7 /* BENTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BENTag.h; sourceTree = "<group>"; };
+		5B883A2F1DDEFAB200E1E4D7 /* BENTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BENTag.m; sourceTree = "<group>"; };
+		5B883A301DDEFAB200E1E4D7 /* BENTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BENTagsView.h; sourceTree = "<group>"; };
+		5B883A311DDEFAB200E1E4D7 /* BENTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BENTagsView.m; sourceTree = "<group>"; };
+		5B883A341DDF1EFE00E1E4D7 /* FansInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansInfoVC.h; sourceTree = "<group>"; };
+		5B883A351DDF1EFE00E1E4D7 /* FansInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansInfoVC.m; sourceTree = "<group>"; };
 		5BBCDF801DA9FC3400697AC9 /* BusinessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BusinessApp.entitlements; sourceTree = "<group>"; };
 		5BBCDF811DAB69BA00697AC9 /* RewardListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardListModel.h; sourceTree = "<group>"; };
 		5BBCDF821DAB69BA00697AC9 /* RewardListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardListModel.m; sourceTree = "<group>"; };
@@ -858,9 +893,6 @@
 		6F2D61821D7D6C2E003D6C73 /* FansDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansDetailsCell.h; sourceTree = "<group>"; };
 		6F2D61831D7D6C2E003D6C73 /* FansDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansDetailsCell.m; sourceTree = "<group>"; };
 		6F2D61841D7D6C2E003D6C73 /* FansDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FansDetailsCell.xib; sourceTree = "<group>"; };
-		6F42E4401D66EAE4001DF20C /* FansRcordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansRcordCell.h; sourceTree = "<group>"; };
-		6F42E4411D66EAE4001DF20C /* FansRcordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansRcordCell.m; sourceTree = "<group>"; };
-		6F42E4421D66EAE4001DF20C /* FansRcordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FansRcordCell.xib; sourceTree = "<group>"; };
 		6F8C7BB91D76F2240092BA05 /* LtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LtView.h; sourceTree = "<group>"; };
 		6F8C7BBA1D76F2240092BA05 /* LtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LtView.m; sourceTree = "<group>"; };
 		6FBDE21A1D7E77400008BA16 /* libUMessage_Sdk_1.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.3.0.a; sourceTree = "<group>"; };
@@ -1145,9 +1177,6 @@
 				C999426C1CB4BE5300001B86 /* DeliverysViewCell.m */,
 				3FCE1F771D129EE1003D7FF7 /* ScanTableViewCell.h */,
 				3FCE1F781D129EE1003D7FF7 /* ScanTableViewCell.m */,
-				6F42E4401D66EAE4001DF20C /* FansRcordCell.h */,
-				6F42E4411D66EAE4001DF20C /* FansRcordCell.m */,
-				6F42E4421D66EAE4001DF20C /* FansRcordCell.xib */,
 				6F2D61821D7D6C2E003D6C73 /* FansDetailsCell.h */,
 				6F2D61831D7D6C2E003D6C73 /* FansDetailsCell.m */,
 				6F2D61841D7D6C2E003D6C73 /* FansDetailsCell.xib */,
@@ -1160,6 +1189,9 @@
 				6FF10B9F1D794F3600760FB3 /* ChooseCustomerCell.h */,
 				6FF10BA01D794F3600760FB3 /* ChooseCustomerCell.m */,
 				6FF10BA11D794F3600760FB3 /* ChooseCustomerCell.xib */,
+				5B883A281DDEE68200E1E4D7 /* FansRcordCell.h */,
+				5B883A291DDEE68200E1E4D7 /* FansRcordCell.m */,
+				5B883A2A1DDEE68200E1E4D7 /* FansRcordCell.xib */,
 			);
 			path = StoreView;
 			sourceTree = "<group>";
@@ -1460,12 +1492,16 @@
 				6FF10B9D1D794CD900760FB3 /* ChooseCustomerVC.m */,
 				6F0E4D601D65CE770051B55B /* FansRecordVC.h */,
 				6F0E4D611D65CE770051B55B /* FansRecordVC.m */,
+				5B883A341DDF1EFE00E1E4D7 /* FansInfoVC.h */,
+				5B883A351DDF1EFE00E1E4D7 /* FansInfoVC.m */,
 				6F2D617F1D7D6AD6003D6C73 /* FansDetailsVC.h */,
 				6F2D61801D7D6AD6003D6C73 /* FansDetailsVC.m */,
 				5BBCE0C61DB5DC5000697AC9 /* FansScreenVC.h */,
 				5BBCE0C71DB5DC5000697AC9 /* FansScreenVC.m */,
 				6F2D617C1D7D1FE1003D6C73 /* EditorNameVC.h */,
 				6F2D617D1D7D1FE1003D6C73 /* EditorNameVC.m */,
+				5B16F9201DE31CF000A646CF /* ChooseTimeVC.h */,
+				5B16F9211DE31CF000A646CF /* ChooseTimeVC.m */,
 				3FCB219A1D07FC8B00773C49 /* StoreInfoController.h */,
 				3FCB219B1D07FC8B00773C49 /* StoreInfoController.m */,
 				3FCB21991D07FC8B00773C49 /* StoreInfo.storyboard */,
@@ -1547,6 +1583,7 @@
 		3FD7F2781C845326003B8CC9 /* Thrid */ = {
 			isa = PBXGroup;
 			children = (
+				5B883A2D1DDEFAB200E1E4D7 /* BENTagsView */,
 				5BBCE04A1DB0B6E200697AC9 /* BlocksKit */,
 				5BBCDFC91DACC10D00697AC9 /* NSDate+Helper */,
 				5BBCDFA81DACBF6B00697AC9 /* ActionSheetPicker */,
@@ -1616,6 +1653,7 @@
 		3FD7F27D1C845326003B8CC9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B16F9031DE2D65100A646CF /* FansCell */,
 				3F07C0961CA3926300FB130F /* OrderView */,
 				3F7FDC351CA1629B00673741 /* StoreView */,
 				3F7701AB1C9BDECB009A9761 /* GoodsView */,
@@ -1751,6 +1789,36 @@
 				5BBCDF821DAB69BA00697AC9 /* RewardListModel.m */,
 			);
 			path = IncomeModel;
+			sourceTree = "<group>";
+		};
+		5B16F9031DE2D65100A646CF /* FansCell */ = {
+			isa = PBXGroup;
+			children = (
+				5B16F9041DE2D67500A646CF /* FansNameCell.h */,
+				5B16F9051DE2D67500A646CF /* FansNameCell.m */,
+				5B16F9061DE2D67500A646CF /* FansNameCell.xib */,
+				5B16F9111DE2D6EF00A646CF /* FansConsumeCell.h */,
+				5B16F9121DE2D6EF00A646CF /* FansConsumeCell.m */,
+				5B16F9131DE2D6EF00A646CF /* FansConsumeCell.xib */,
+				5B16F9161DE2D70400A646CF /* FansStoreCell.h */,
+				5B16F9171DE2D70400A646CF /* FansStoreCell.m */,
+				5B16F9181DE2D70400A646CF /* FansStoreCell.xib */,
+				5B16F91B1DE2D72200A646CF /* FansGoodsCell.h */,
+				5B16F91C1DE2D72200A646CF /* FansGoodsCell.m */,
+				5B16F91D1DE2D72200A646CF /* FansGoodsCell.xib */,
+			);
+			path = FansCell;
+			sourceTree = "<group>";
+		};
+		5B883A2D1DDEFAB200E1E4D7 /* BENTagsView */ = {
+			isa = PBXGroup;
+			children = (
+				5B883A2E1DDEFAB200E1E4D7 /* BENTag.h */,
+				5B883A2F1DDEFAB200E1E4D7 /* BENTag.m */,
+				5B883A301DDEFAB200E1E4D7 /* BENTagsView.h */,
+				5B883A311DDEFAB200E1E4D7 /* BENTagsView.m */,
+			);
+			path = BENTagsView;
 			sourceTree = "<group>";
 		};
 		5BBCDFA81DACBF6B00697AC9 /* ActionSheetPicker */ = {
@@ -2096,6 +2164,7 @@
 				3FC355251D48C63C00D7CF30 /* dotimeout.js in Resources */,
 				3FC355121D48C63C00D7CF30 /* style.css in Resources */,
 				6F2D61861D7D6C2E003D6C73 /* FansDetailsCell.xib in Resources */,
+				5B16F91A1DE2D70400A646CF /* FansStoreCell.xib in Resources */,
 				3FC355221D48C63C00D7CF30 /* sjk.png in Resources */,
 				3F7FDC3A1CA162B300673741 /* ChangeDataTableViewCell.xib in Resources */,
 				3FC3551A1D48C63C00D7CF30 /* ico-cue.png in Resources */,
@@ -2103,13 +2172,16 @@
 				3FC355141D48C63C00D7CF30 /* bg-header.png in Resources */,
 				3FC355211D48C63C00D7CF30 /* shop.jpg in Resources */,
 				6FF10BA31D794F3600760FB3 /* ChooseCustomerCell.xib in Resources */,
+				5B16F91F1DE2D72200A646CF /* FansGoodsCell.xib in Resources */,
 				3FC355161D48C63C00D7CF30 /* btn-minus-big.png in Resources */,
 				3FC355111D48C63C00D7CF30 /* err.html in Resources */,
 				3F8211AE1C97E60000A3505B /* AddBank.storyboard in Resources */,
 				3FCB21AE1D07FC8B00773C49 /* StoreInfo.storyboard in Resources */,
 				3F8730C81CA92A3000CD8BE7 /* OrderSure.storyboard in Resources */,
+				5B16F9151DE2D6EF00A646CF /* FansConsumeCell.xib in Resources */,
 				3FC3552D1D48C63C00D7CF30 /* touch.js in Resources */,
 				3FC355151D48C63C00D7CF30 /* btn-add-big.png in Resources */,
+				5B883A2C1DDEE68200E1E4D7 /* FansRcordCell.xib in Resources */,
 				3FD0AEE91CD8A5570062CE00 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				3FC3551F1D48C63C00D7CF30 /* ico-search.png in Resources */,
 				3FC3551C1D48C63C00D7CF30 /* ico-err.png in Resources */,
@@ -2124,6 +2196,7 @@
 				3FC4269F1C990BAF0045EB75 /* Withdraw.storyboard in Resources */,
 				3FC355281D48C63C00D7CF30 /* iscroll-probe.js in Resources */,
 				3FC355241D48C63C00D7CF30 /* base64.js in Resources */,
+				5B16F9081DE2D67500A646CF /* FansNameCell.xib in Resources */,
 				3FC355171D48C63C00D7CF30 /* goods.jpg in Resources */,
 				3F8730C61CA91F3400CD8BE7 /* OrderPrice.storyboard in Resources */,
 				3FC3552C1D48C63C00D7CF30 /* plug.js in Resources */,
@@ -2140,7 +2213,6 @@
 				3FC355131D48C63C00D7CF30 /* bg-border.png in Resources */,
 				3FB2F36D1C883D81005CC080 /* PostData.storyboard in Resources */,
 				3FC355231D48C63C00D7CF30 /* special.jpg in Resources */,
-				6F42E4441D66EAE4001DF20C /* FansRcordCell.xib in Resources */,
 				3F9F562F1C84304100346A18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2246,6 +2318,7 @@
 				3F76113E1D339054002A9A84 /* CollectionViewCell.m in Sources */,
 				3FA7BEFA1CC8E1FB00E6A1AF /* CartViewController.m in Sources */,
 				3F8B8C081CB3C50F006D01BA /* SetModel.m in Sources */,
+				5B16F9221DE31CF000A646CF /* ChooseTimeVC.m in Sources */,
 				5BBCE0B11DB0B6E200697AC9 /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				5BBCDFC81DACC04A00697AC9 /* NSDate+Common.m in Sources */,
 				3F53F83C1D112149002ADE65 /* KxMenu.m in Sources */,
@@ -2266,6 +2339,7 @@
 				3FA7BEF31CC8E16100E6A1AF /* GoodsViewCell.m in Sources */,
 				3FB2F3701C883DA1005CC080 /* PostDataTableViewController.m in Sources */,
 				5BBCE09B1DB0B6E200697AC9 /* NSMutableDictionary+BlocksKit.m in Sources */,
+				5B883A2B1DDEE68200E1E4D7 /* FansRcordCell.m in Sources */,
 				BAC592B61D8E62FC0099FC28 /* SpecialDetailViewController.m in Sources */,
 				3FB2F36B1C87FAE5005CC080 /* SetPasswordViewController.m in Sources */,
 				5BBCE0A81DB0B6E200697AC9 /* NSURLConnection+BlocksKit.m in Sources */,
@@ -2311,6 +2385,7 @@
 				3F07C09D1CA3B10A00FB130F /* OrderModel.m in Sources */,
 				3FFB068E1C96C65C00BC48C7 /* GoodsViewController.m in Sources */,
 				3F8E08171CE5B22300C312E4 /* SearchResultViewCell.m in Sources */,
+				5B16F91E1DE2D72200A646CF /* FansGoodsCell.m in Sources */,
 				6F0E4D5A1D65C1350051B55B /* Tool.m in Sources */,
 				5BBCDF831DAB69BA00697AC9 /* RewardListModel.m in Sources */,
 				3FCB21A31D07FC8B00773C49 /* FeedbackViewController.m in Sources */,
@@ -2332,6 +2407,7 @@
 				3FBF1B8A1CA4E8A5005E29A4 /* OrderDetailViewController.m in Sources */,
 				3F63B9741CABF1010027136E /* ActivityViewController.m in Sources */,
 				5BBCE0B41DB0B6E200697AC9 /* UITextField+BlocksKit.m in Sources */,
+				5B883A331DDEFAB200E1E4D7 /* BENTagsView.m in Sources */,
 				3FBC0D831C86B591004BFF33 /* HomeViewController.m in Sources */,
 				6FF10BA21D794F3600760FB3 /* ChooseCustomerCell.m in Sources */,
 				5BBCE09F1DB0B6E200697AC9 /* NSObject+BKAssociatedObjects.m in Sources */,
@@ -2339,6 +2415,7 @@
 				5BBCDF861DABA7B200697AC9 /* DateSiftViewController.m in Sources */,
 				3FBC0D931C86F729004BFF33 /* PasswordTextField.m in Sources */,
 				5B37E7631DA8F2A7007D8660 /* RedDetailstCell.m in Sources */,
+				5B16F9191DE2D70400A646CF /* FansStoreCell.m in Sources */,
 				BA7CEF031D89AC3500E85100 /* ActivityCell.m in Sources */,
 				5BBCE0B31DB0B6E200697AC9 /* UIPopoverController+BlocksKit.m in Sources */,
 				3FCB21B01D07FC8B00773C49 /* StoreViewController.m in Sources */,
@@ -2388,10 +2465,10 @@
 				3FA58F8D1CDC2FF0006020F3 /* specialModel.m in Sources */,
 				6F0E4D581D65C1350051B55B /* NSString+WYBExtension.m in Sources */,
 				3FCB21A81D07FC8B00773C49 /* OpenKicketViewController.m in Sources */,
+				5B16F9071DE2D67500A646CF /* FansNameCell.m in Sources */,
 				5BBCE0AB1DB0B6E200697AC9 /* MFMailComposeViewController+BlocksKit.m in Sources */,
 				5BBCE0B61DB0B6E200697AC9 /* UIWebView+BlocksKit.m in Sources */,
 				3FF82F661C857E85005C28E2 /* UIColor+Util.m in Sources */,
-				6F42E4431D66EAE4001DF20C /* FansRcordCell.m in Sources */,
 				3FB314341CB667EE00C8E3AD /* StoresModel.m in Sources */,
 				5BBCDFCD1DACC10D00697AC9 /* NSDate+Helper.m in Sources */,
 				3FC426A81C99558B0045EB75 /* IncomeGoodsController.m in Sources */,
@@ -2401,6 +2478,8 @@
 				6F0B17CE1D6ECB7400BFA275 /* BaseTableViewController.m in Sources */,
 				3F8E8FB91CAD0A9800FA336D /* HistoryModel.m in Sources */,
 				3F8B8BFA1CB37A2C006D01BA /* GoodsDataModel.m in Sources */,
+				5B883A361DDF1EFE00E1E4D7 /* FansInfoVC.m in Sources */,
+				5B883A321DDEFAB200E1E4D7 /* BENTag.m in Sources */,
 				3F8E081A1CE5B3C600C312E4 /* SearchResultModel.m in Sources */,
 				5B37E7601DA8F1EE007D8660 /* RedListViewController.m in Sources */,
 				3F138B0F1CFED79500CC67FE /* GeneralViewCell.m in Sources */,
@@ -2443,6 +2522,7 @@
 				3F8321DB1CA50C0E002C9850 /* OrderDetailModel.m in Sources */,
 				3FCE1F791D129EE1003D7FF7 /* ScanTableViewCell.m in Sources */,
 				5BBCDF891DABAB6D00697AC9 /* DateSiftCell.m in Sources */,
+				5B16F9141DE2D6EF00A646CF /* FansConsumeCell.m in Sources */,
 				3FC689471C9AC718009527E1 /* MHSelectPickerView.m in Sources */,
 				6F0E4D571D65C1350051B55B /* NSObject+WYBExtension.m in Sources */,
 				3FC6893C1C9A99E6009527E1 /* PerfectDate.m in Sources */,

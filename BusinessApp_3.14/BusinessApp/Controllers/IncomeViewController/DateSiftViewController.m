@@ -180,9 +180,7 @@
 //    
 //    [[NSNotificationCenter defaultCenter] postNotification:notification];
     
-    if (self.sureBtnBlock) {
-        self.sureBtnBlock(self.start_time,self.end_time);
-    }
+    
 }
 
 

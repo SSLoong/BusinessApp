@@ -17,38 +17,6 @@
             endingLineNumber = "591"
             landmarkName = "-shareAction"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SpecialDetailViewController shareAction]"
-                  moduleName = "BusinessApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
-                  timestampString = "500280707.937302"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "591"
-                  endingLineNumber = "591"
-                  offsetFromSymbolStart = "392">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[SpecialDetailViewController shareAction]_block_invoke"
-                  moduleName = "BusinessApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
-                  timestampString = "500280707.940808"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "593"
-                  endingLineNumber = "593"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -142,12 +110,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/RedListViewController.m"
-                  timestampString = "500280707.961129"
+                  timestampString = "501420188.040425"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "128"
                   endingLineNumber = "128"
-                  offsetFromSymbolStart = "372">
+                  offsetFromSymbolStart = "432">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -157,12 +125,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/RedListViewController.m"
-                  timestampString = "500280707.962713"
+                  timestampString = "501420188.042582"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "128"
                   endingLineNumber = "128"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -190,12 +158,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/StoreViewController/RevisedPriceVC.m"
-                  timestampString = "500280707.965733"
+                  timestampString = "501420188.046581"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
                   endingLineNumber = "110"
-                  offsetFromSymbolStart = "552">
+                  offsetFromSymbolStart = "471">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -205,12 +173,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/StoreViewController/RevisedPriceVC.m"
-                  timestampString = "500280707.967165"
+                  timestampString = "501420188.048865"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
                   endingLineNumber = "110"
-                  offsetFromSymbolStart = "56">
+                  offsetFromSymbolStart = "52">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -220,12 +188,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/StoreViewController/RevisedPriceVC.m"
-                  timestampString = "500280707.96856"
+                  timestampString = "501420188.050841"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "112"
                   endingLineNumber = "112"
-                  offsetFromSymbolStart = "68">
+                  offsetFromSymbolStart = "54">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -259,22 +227,6 @@
             startingLineNumber = "241"
             endingLineNumber = "241"
             landmarkName = "-loadData"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BusinessApp/Controllers/StoreViewController/FansRecordVC.m"
-            timestampString = "498468602.724991"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "-loadDataConnect"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -445,12 +397,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Categories/PerfecrGoods/Controller/ChooseViewController.m"
-                  timestampString = "500280708.002872"
+                  timestampString = "501420188.10152"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "162"
                   endingLineNumber = "162"
-                  offsetFromSymbolStart = "104">
+                  offsetFromSymbolStart = "100">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -460,12 +412,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Categories/PerfecrGoods/Controller/ChooseViewController.m"
-                  timestampString = "500280708.004519"
+                  timestampString = "501420188.10404"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "162"
                   endingLineNumber = "162"
-                  offsetFromSymbolStart = "124">
+                  offsetFromSymbolStart = "115">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -493,12 +445,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SalesAwardViewController.m"
-                  timestampString = "500280708.007447"
+                  timestampString = "501420188.108776"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "232"
                   endingLineNumber = "232"
-                  offsetFromSymbolStart = "1740">
+                  offsetFromSymbolStart = "1755">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -508,12 +460,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SalesAwardViewController.m"
-                  timestampString = "500280708.008862"
+                  timestampString = "501420188.111123"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "232"
                   endingLineNumber = "232"
-                  offsetFromSymbolStart = "1760">
+                  offsetFromSymbolStart = "1770">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -541,12 +493,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/InventoryListController.m"
-                  timestampString = "500280708.011828"
+                  timestampString = "501420188.115304"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "210"
                   endingLineNumber = "210"
-                  offsetFromSymbolStart = "564">
+                  offsetFromSymbolStart = "574">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -556,12 +508,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/InventoryListController.m"
-                  timestampString = "500280708.013389"
+                  timestampString = "501420188.11755"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "210"
                   endingLineNumber = "210"
-                  offsetFromSymbolStart = "584">
+                  offsetFromSymbolStart = "586">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -589,12 +541,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/IncomeDetailController.m"
-                  timestampString = "500280708.016284"
+                  timestampString = "501420188.122218"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "240"
                   endingLineNumber = "240"
-                  offsetFromSymbolStart = "1256">
+                  offsetFromSymbolStart = "1273">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -604,12 +556,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/IncomeViewController/IncomeDetailController.m"
-                  timestampString = "500280708.017712"
+                  timestampString = "501420188.124179"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "240"
                   endingLineNumber = "240"
-                  offsetFromSymbolStart = "1276">
+                  offsetFromSymbolStart = "1285">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -653,12 +605,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
-                  timestampString = "500280708.023108"
+                  timestampString = "501420188.131935"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "205"
                   endingLineNumber = "205"
-                  offsetFromSymbolStart = "312">
+                  offsetFromSymbolStart = "261">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -668,12 +620,12 @@
                   moduleName = "BusinessApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sunshenglong/Documents/WorkSpace/BusinessApp/BusinessApp_3.14/BusinessApp/Controllers/GoodsViewController/SpecialDetailViewController.m"
-                  timestampString = "500280708.024488"
+                  timestampString = "501420188.133879"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "206"
                   endingLineNumber = "206"
-                  offsetFromSymbolStart = "48">
+                  offsetFromSymbolStart = "51">
                </Location>
             </Locations>
          </BreakpointContent>
