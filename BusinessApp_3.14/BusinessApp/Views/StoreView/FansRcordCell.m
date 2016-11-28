@@ -26,7 +26,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-
+    
     self.tagsView = [[BENTagsView alloc] init];
     self.tagsView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.tagsView setTagCornerRadius:9];
@@ -35,42 +35,33 @@
 
     [self.tagsView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(@-13);
-        make.left.mas_equalTo(@15);
+        make.left.mas_equalTo(@10);
     }];
-    
-    [self configDictionary:self.dic];
     
     // Initialization code
 }
 
-- (void)configDictionary:(NSDictionary *)dic{
+- (void)configDataModel:(FansRewardModel *)modle{
     
     NSArray *colorArr = [[NSArray alloc]init];
-    if (dic) {
-        colorArr = @[[UIColor blackColor]];
-    }else if (dic){
-        colorArr = @[[UIColor blackColor],[UIColor blackColor]];
-    }else if (dic){
-        colorArr = @[[UIColor blackColor],[UIColor blackColor],[UIColor grayColor]];
-    }else if (dic){
-        colorArr = @[[UIColor blackColor],[UIColor blackColor],[UIColor grayColor],[UIColor grayColor]];
+    if (modle.brands.count == 1) {
+        colorArr = @[[UIColor colorWithHex:323232]];
+    }else if (modle.brands.count == 2){
+        colorArr = @[[UIColor colorWithHex:323232],[UIColor colorWithHex:555555]];
+    }else if (modle.brands.count == 3){
+        colorArr = @[[UIColor colorWithHex:323232],[UIColor colorWithHex:555555],[UIColor colorWithHex:787878]];
+    }else if (modle.brands.count == 4){
+        colorArr = @[[UIColor colorWithHex:323232],[UIColor colorWithHex:555555],[UIColor colorWithHex:787878],[UIColor colorWithHex:0x9b9b9b]];
     }else{
-        colorArr = @[[UIColor blackColor],[UIColor blackColor],[UIColor grayColor],[UIColor grayColor],[UIColor lightGrayColor]];
+        colorArr = @[[UIColor colorWithHex:323232],[UIColor colorWithHex:555555],[UIColor colorWithHex:787878],[UIColor colorWithHex:0x9b9b9b],[UIColor colorWithHex:0xbebebe]];
     }
-    
-    
-    NSString *a = @"13781213137";
-    NSString *string=[a stringByReplacingOccurrencesOfString:[a substringWithRange:NSMakeRange(3,4)]withString:@"****"];
-    NSLog(@"b:%@",string);
-    
-    NSString *phoneString = [NSString stringWithFormat:@"[%@]",string];
-    
-    self.name.text = @"散客";
-    self.phone.text = phoneString;
-    self.sotreLevel.text = @"2";
-    self.consumeLevel.text = @"5";
+
+    self.name.text = modle.memo;
+    self.phone.text = modle.phone;
+    self.sotreLevel.text = modle.store_level;
+    self.consumeLevel.text = modle.platform_level;
   
-    self.tagsView.tagStrings = @[@"茅台", @"五粮液", @"剑南春",@"洋河",@"汾酒"];
+    self.tagsView.tagStrings = modle.brands;
     self.tagsView.tagColors = @[[UIColor blackColor],[UIColor blackColor],[UIColor grayColor],[UIColor grayColor],[UIColor lightGrayColor]];
 
     

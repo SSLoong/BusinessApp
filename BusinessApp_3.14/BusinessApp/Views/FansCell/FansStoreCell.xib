@@ -18,12 +18,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-Xa-z8D">
-                        <rect key="frame" x="76.5" y="11" width="35" height="21"/>
-                        <color key="backgroundColor" red="0.99215686270000003" green="0.77021569050000005" blue="0.20929726409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store_vip" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-Xa-z8D">
+                        <rect key="frame" x="83" y="13" width="45" height="17"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="35" id="NMT-kx-QQO"/>
-                            <constraint firstAttribute="height" constant="21" id="z6P-89-8rZ"/>
+                            <constraint firstAttribute="height" constant="17" id="T25-mf-g26"/>
+                            <constraint firstAttribute="width" constant="45" id="cFh-4Y-2c2"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店铺消费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gl-D5-SGh">
@@ -46,38 +45,38 @@
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH7-Au-6Pp">
-                        <rect key="frame" x="93" y="11" width="20" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店铺等级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1e6-ip-tP2">
+                        <rect key="frame" x="15" y="11" width="60" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="20" id="3YO-VM-OWv"/>
-                            <constraint firstAttribute="height" constant="21" id="aHS-Ub-Ip7"/>
+                            <constraint firstAttribute="height" constant="21" id="5IW-kI-rct"/>
+                            <constraint firstAttribute="width" constant="60" id="fEJ-c5-Llb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH7-Au-6Pp">
+                        <rect key="frame" x="104" y="11" width="18" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="1jg-yj-3pI"/>
+                            <constraint firstAttribute="height" constant="21" id="TqM-eP-dby"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店铺等级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1e6-ip-tP2">
-                        <rect key="frame" x="15" y="11" width="53.5" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="5IW-kI-rct"/>
-                            <constraint firstAttribute="width" constant="53.5" id="fEJ-c5-Llb"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="9gl-D5-SGh" secondAttribute="trailing" constant="66" id="1hY-UV-bkh"/>
                     <constraint firstItem="1Ya-5v-FNz" firstAttribute="leading" secondItem="9gl-D5-SGh" secondAttribute="trailing" id="2LB-FH-LhI"/>
-                    <constraint firstItem="TH7-Au-6Pp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="6aA-OK-FbL"/>
+                    <constraint firstItem="HFw-Xa-z8D" firstAttribute="leading" secondItem="1e6-ip-tP2" secondAttribute="trailing" constant="8" id="3wF-4p-2uQ"/>
                     <constraint firstItem="1Ya-5v-FNz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="7iB-8Y-X2b"/>
                     <constraint firstItem="9gl-D5-SGh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="B0v-8y-zel"/>
+                    <constraint firstItem="TH7-Au-6Pp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="BSu-eC-yBj"/>
                     <constraint firstItem="1e6-ip-tP2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="OmX-4y-5Xv"/>
+                    <constraint firstItem="TH7-Au-6Pp" firstAttribute="leading" secondItem="1e6-ip-tP2" secondAttribute="trailing" constant="29" id="ZeG-Ff-EV1"/>
                     <constraint firstItem="1e6-ip-tP2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="aYw-zN-PG9"/>
-                    <constraint firstItem="TH7-Au-6Pp" firstAttribute="leading" secondItem="1e6-ip-tP2" secondAttribute="trailing" constant="24.5" id="cpq-uM-gIa"/>
-                    <constraint firstItem="HFw-Xa-z8D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="oR7-wa-zL5"/>
-                    <constraint firstItem="HFw-Xa-z8D" firstAttribute="leading" secondItem="1e6-ip-tP2" secondAttribute="trailing" constant="8" id="tqL-Dx-Eav"/>
+                    <constraint firstItem="HFw-Xa-z8D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="ewr-dc-zuz"/>
                     <constraint firstAttribute="trailing" secondItem="1Ya-5v-FNz" secondAttribute="trailing" constant="8" id="w48-4I-6Rd"/>
                 </constraints>
             </tableViewCellContentView>
@@ -87,4 +86,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="store_vip" width="68" height="30"/>
+    </resources>
 </document>

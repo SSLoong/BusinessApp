@@ -13,6 +13,8 @@
 #import "FansScreenVC.h"
 #import "FansInfoVC.h"
 
+#import "FansRewardModel.h"
+
 @interface FansRecordVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,7 +31,7 @@
     [super viewDidLoad];
    
     
-    UIBarButtonItem *releaseButon=[[UIBarButtonItem alloc] initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(FansScreenBtn:)];
+    UIBarButtonItem *releaseButon = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(FansScreenBtn:)];
     self.navigationItem.rightBarButtonItem=releaseButon;
     
     self.nameStr = [[NSString alloc]init];
@@ -52,12 +54,18 @@
 {
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.automaticallyAdjustsScrollViewInsets = YES;
     
     [self.tableView registerNib: [UINib nibWithNibName:@"FansRcordCell" bundle:nil] forCellReuseIdentifier:@"FansRcordCellID"];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+
     
     WS(weakSelf)
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -104,17 +112,43 @@
     } success:^(id response) {
         WYBLog(@"%@",response);
         [self endRefresh];
+
         if ([response[@"code"] isEqualToString:@"0000"]) {
-            self.dic = response[@"data"];
-            [self addTheDic:self.dic];
+            
+            if (_page == 1 && self.data.count >0) {
+                
+                [self.data removeAllObjects];
+                [self.tableView reloadData];
+                
+            }
+
+            
+            for (NSDictionary *dic in response[@"data"]) {
+                FansRewardModel *model = [[FansRewardModel alloc]init];
+                [model mj_setKeyValues:dic];
+                [self.data addObject:model];
+            }
+            
+            if (_tableView.mj_header.isRefreshing) {
+                [_tableView.mj_header endRefreshing];
+            }
+            if (self.data.count == _page * 10) {
+                [_tableView.mj_footer endRefreshing];
+            }else{
+                [_tableView.mj_footer endRefreshingWithNoMoreData];
+            }
+            
+            [self.tableView reloadData];
+            
         }else{
             [self.view showLoadingWithMessage:response[@"msg"] hideAfter:2.0];
         }
         
     } failure:^(NSError * error) {
         [self endRefresh];
-        //[self.view showLoadingWithMessage:@"网络连接错误,请稍后重试" hideAfter:2.0];
-//        WYBLog(@"%@",error.description);
+
+        
+        
     }];
     
 }
@@ -177,15 +211,23 @@
     //FansRcordCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell1" forIndexPath:indexPath];
      static NSString *cellID = @"FansRcordCellID";
     FansRcordCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    cell.dic = self.data[indexPath.row];
-
+    if (!cell) {
+        [tableView registerNib:[UINib nibWithNibName:@"FansRcordCell" bundle:nil] forCellReuseIdentifier:cellID];
+        cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    }
+    FansRewardModel *model = self.data[indexPath.row];
+    [cell configDataModel:model];
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    FansRewardModel *model = self.data[indexPath.row];
     FansInfoVC *vc = [[FansInfoVC alloc]init];
+    vc.fans_id = model.id;
+    
     [self.navigationController pushViewController:vc animated:YES];
     
 }

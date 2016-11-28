@@ -35,24 +35,29 @@
     [super viewDidLoad];
 
     if (self.modle !=nil) {
+        self.title = @"银行卡详情";
         self.nameField.text = _modle.name;
+        [self.nameField setPlaceholder:@""];
         [self.nameField setEnabled:NO];
         
-        self.cardFiled.text = _modle.bank_card;
+        self.cardFiled.text = _modle.bank_cardall;
+        [self.cardFiled setPlaceholder:@""];
         [self.cardFiled setEnabled:NO];
         
         self.phoneFiled.text =  _modle.bank_phone;
+        [self.phoneFiled setPlaceholder:@""];
         [self.phoneFiled setEnabled:NO];
         
-        self.bankField.text =@"";
+        self.bankField.text =_modle.open_bank_address;
+        [self.bankField setPlaceholder:@""];
         [self.bankField setEnabled:NO];
         
         self.bankLabel.text = _modle.open_branch;
-        self.title = @"银行卡详情";
-        
+    }else{
+        self.title = @"添加银行卡";
+
     }
     
-    self.title = @"添加银行卡";
 
 }
 
@@ -109,10 +114,12 @@
 
         [AFHttpTool incomeAddBank:Store_id
                         bank_code:_codeString
-                             name:_nameField.text
-                      open_branch:_bankLabel.text
-                       bank_phone:_phoneFiled.text
-                        bank_card:_cardFiled.text progress:^(NSProgress *progress) {
+                                name:_nameField.text
+                    open_branch:_bankLabel.text
+                    bank_phone:_phoneFiled.text
+                       bank_card:_cardFiled.text
+       open_bank_address:_bankField.text
+                          progress:^(NSProgress *progress) {
                            
         } success:^(id response) {
             
@@ -126,12 +133,13 @@
                 
                 return;
             }
-
-
+            
             if (_addSuccess) {
                 _addSuccess();
             }
-            
+            _hud.labelText = @"添加成功";
+            [_hud hide:YES afterDelay:1];
+
             [weakSelf.navigationController popViewControllerAnimated:YES];
         
             

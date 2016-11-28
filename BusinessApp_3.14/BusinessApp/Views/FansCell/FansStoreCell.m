@@ -23,9 +23,9 @@
     // Initialization code
 }
 
-- (void)configDataDic:(NSDictionary *)dic{
-    self.money.text = @"¥54321";
-    self.vipLevel.text = @"8";
+- (void)configDataModel:(FansInfoModel *)model{
+    self.money.text = model.store_score;
+    self.vipLevel.text = model.store_level;
 
 }
 

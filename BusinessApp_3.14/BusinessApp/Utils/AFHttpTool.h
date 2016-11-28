@@ -237,6 +237,14 @@ ordexpress_company_ider_id:(NSString *)express_company_id
             success:(void (^)(id))success
             failure:(void (^)(NSError *))failure;
 
+//新粉丝详情
++ (void)fansInfo:(NSString *)store_id
+         fans_id:(NSString *)fans_id
+            progress:(void (^)(NSProgress *))progress
+            success:(void (^)(id))success
+            failure:(void (^)(NSError *))failure;
+
+
 //备注姓名
 + (void)edtiorname:(NSString *)customeid
               name:(NSString *)name
@@ -589,6 +597,7 @@ feedback_content:(NSString *)feedback_content
          open_branch:(NSString *)open_branch
           bank_phone:(NSString *)bank_phone
            bank_card:(NSString *)bank_card
+   open_bank_address:(NSString *)address
             progress:(void (^)(NSProgress *progress))progress
              success:(void (^)(id response))success
              failure:(void (^)(NSError *err))failure;

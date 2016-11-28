@@ -31,11 +31,11 @@
 }
 
 
-- (void)configDataDic:(NSDictionary *)dic{
+- (void)configFansInfoModel:(FansInfoModel *)model{
 
-    self.nameLabel.text = @"孙升隆";
-    self.phoneLabel.text = @"[135****1711]";
-    self.sourceLabel.text = @"APP";
+    self.nameLabel.text = model.memo;
+    self.phoneLabel.text = model.phone;
+    self.sourceLabel.text = model.source;
 
 }
 

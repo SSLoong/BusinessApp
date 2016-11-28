@@ -438,6 +438,22 @@
                          progress:progress
                           success:success
                           failure:failure];
+}
+
++ (void)fansInfo:(NSString *)store_id
+         fans_id:(NSString *)fans_id
+        progress:(void (^)(NSProgress *))progress
+         success:(void (^)(id))success
+         failure:(void (^)(NSError *))failure{
+    
+    NSDictionary *params = @{@"store_id":store_id,@"id":fans_id};
+    
+    [AFHttpTool requestWihtMethod:RequestMethodTypePost
+                              url:@"/fans/info"
+                           params:params
+                         progress:progress
+                          success:success
+                          failure:failure];
     
 }
 
@@ -462,6 +478,8 @@
                           failure:failure];
     
 }
+
+
 
 
 //备注姓名
@@ -1444,13 +1462,14 @@ ordexpress_company_ider_id:(NSString *)express_company_id
          open_branch:(NSString *)open_branch
           bank_phone:(NSString *)bank_phone
            bank_card:(NSString *)bank_card
+   open_bank_address:(NSString *)address
             progress:(void (^)(NSProgress *))progress
              success:(void (^)(id))success
              failure:(void (^)(NSError *))failure{
 
 
 
-    NSDictionary *params = @{@"store_id":store_id,@"bank_code":bank_code,@"name":name,@"open_branch":open_branch,@"bank_phone":bank_phone,@"bank_card":bank_card};
+    NSDictionary *params = @{@"store_id":store_id,@"bank_code":bank_code,@"name":name,@"open_branch":open_branch,@"bank_phone":bank_phone,@"bank_card":bank_card,@"open_bank_address":address};
     [AFHttpTool requestWihtMethod:RequestMethodTypePost
                               url:@"/store/bank/add"
                            params:params

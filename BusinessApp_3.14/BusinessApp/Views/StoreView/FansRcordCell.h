@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FansRewardModel.h"
 @interface FansRcordCell : UITableViewCell
 
 @property (nonatomic, strong) NSDictionary *dic;
 
-- (void)configDictionary:(NSDictionary *)dic;
+- (void)configDataModel:(FansRewardModel *)modle;
 
 @end

@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FansGoodsListModel.h"
 
 @interface FansGoodsCell : UITableViewCell
 
-- (void)configDataDic:(NSDictionary *)dic;
+- (void)configGoodsListModel:(FansGoodsListModel *)model;
 
 
 @end
