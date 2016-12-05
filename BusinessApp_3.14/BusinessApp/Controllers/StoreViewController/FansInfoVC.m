@@ -14,13 +14,19 @@
 #import "EditorNameVC.h"
 #import "ChooseTimeVC.h"
 
+#import "FansInfoModel.h"
+#import "FansGoodsListModel.h"
 
 @interface FansInfoVC ()<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic,strong)MBProgressHUD *hud;
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) NSInteger page;
 @property (nonatomic, assign)BOOL isLoading;//是否加载中
 @property (nonatomic, strong)NSMutableArray *dataArr;
+@property (nonatomic, strong)NSMutableArray *goodsListArr;
+@property (nonatomic, strong) FansInfoModel *model;
 
 @property (nonatomic, assign) int type;
 
@@ -38,27 +44,38 @@
     return _dataArr;
 }
 
+-(NSMutableArray *)goodsListArr
+{
+    if (_goodsListArr == nil) {
+        _goodsListArr = [NSMutableArray array];
+    }
+    return _goodsListArr;
+}
 
+- (void)viewWillAppear:(BOOL)animated{
+    [self.tableView.mj_header beginRefreshing];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIBarButtonItem *releaseButon=[[UIBarButtonItem alloc] initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(ScreenTimeBtn:)];
-    self.navigationItem.rightBarButtonItem=releaseButon;
 
+    UIBarButtonItem *releaseButon = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"filter"] style:UIBarButtonItemStylePlain target:self action:@selector(ScreenTimeBtn:)];
+    self.navigationItem.rightBarButtonItem=releaseButon;
+    self.title = @"粉丝详情";
     
     [self createTableView];
     // Do any additional setup after loading the view.
 }
 
 - (void)ScreenTimeBtn:(id)sender{
-    
-    ChooseTimeVC *vc = [[ChooseTimeVC alloc]init];
-    vc.chooseTimeBlock = ^(int type){
-        self.type = type;
-        [self refresh];
-    };
-    [self.navigationController pushViewController:vc animated:YES];
+
+    return;
+//    ChooseTimeVC *vc = [[ChooseTimeVC alloc]init];
+//    vc.chooseTimeBlock = ^(int type){
+//        self.type = type;
+//        [self refresh];
+//    };
+//    [self.navigationController pushViewController:vc animated:YES];
 
 }
 
@@ -79,21 +96,14 @@
     
     [self.view addSubview:_tableView];
     
-//    _tableView .mj_header = ({
-//        MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
-//        header.lastUpdatedTimeLabel.hidden = YES;
-//        header.stateLabel.hidden = YES;
-//        header;
-//    });
-//    [_tableView.mj_header beginRefreshing];
-//    
-//    _tableView.mj_footer = ({
-//        MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
-//        footer.refreshingTitleHidden = YES;
-//        footer.hidden = YES;
-//        footer;
-//    });
-//    
+    _tableView .mj_header = ({
+        MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
+        header.lastUpdatedTimeLabel.hidden = YES;
+        header.stateLabel.hidden = YES;
+        header;
+    });
+    [_tableView.mj_header beginRefreshing];
+    
 }
 
 
@@ -124,6 +134,57 @@
 
 - (void)loadData{
 
+    [AFHttpTool fansInfo:Store_id fans_id:_fans_id progress:^(NSProgress *progress) {
+        
+    } success:^(id response) {
+        
+        
+        if (!([response[@"code"]integerValue] == 0000)) {
+            NSString *erroeMessage = response[@"msg"];
+            _hud.mode = MBProgressHUDModeCustomView;
+            _hud.customView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"HUD-error"]];
+            _hud.labelText = [NSString stringWithFormat:@"错误:%@",erroeMessage];
+            [_hud hide:YES afterDelay:3];
+            return;
+        }
+        
+        if (self.goodsListArr.count > 0) {
+            [self.goodsListArr removeAllObjects];
+            [self.tableView reloadData];
+        }
+            _model = [[FansInfoModel alloc]init];
+            NSDictionary *dic = response[@"data"];
+            [_model mj_setKeyValues:dic];
+        
+        for (NSDictionary *dic in response[@"data"][@"godslist"]) {
+            FansGoodsListModel *model = [[FansGoodsListModel alloc]init];
+            [model mj_setKeyValues:dic];
+            [self.goodsListArr addObject:model];
+        }
+        
+        _isLoading = NO;
+        if (_tableView.mj_header.isRefreshing) {
+            [_tableView.mj_header endRefreshing];
+        }
+
+        [self.tableView reloadData];
+
+        
+        
+        
+    } failure:^(NSError *err) {
+        _hud = [AppUtil createHUD];
+        _hud.userInteractionEnabled = NO;
+        _hud.mode = MBProgressHUDModeCustomView;
+        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+        _hud.labelText = @"Error";
+        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
+        [_hud hide:YES afterDelay:3];
+        if (_isLoading) {
+            _isLoading = NO;
+        }
+        [_tableView.mj_header endRefreshing];
+    }];
 
 
 }
@@ -133,7 +194,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 3) {
-        return 3;
+        return self.goodsListArr.count;
     }else
         return 1;
 }
@@ -161,7 +222,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     //NSDictionary * dic = self.dataArr[indexPath.row];
-    NSDictionary *dic = [[NSDictionary alloc]init];
+    
     if (indexPath.section == 0) {
         FansNameCell * cell = [tableView dequeueReusableCellWithIdentifier:@"FansNameCellID"];
         if (!cell)
@@ -172,10 +233,10 @@
         cell.changeBtnBlock = ^(){
                 EditorNameVC * vc = VCWithStoryboardNameAndVCIdentity(@"StoreInfo", @"EditorNameVC");
                 vc.hidesBottomBarWhenPushed = YES;
-                vc.customerID = dic[@"id"];
+                vc.customerID = _model.id;
                 [self.navigationController pushViewController:vc animated:YES];
         };
-        [cell configDataDic:dic];
+        [cell configFansInfoModel:_model];
         return cell;
         
         
@@ -186,7 +247,7 @@
             [tableView registerNib:[UINib nibWithNibName:@"FansConsumeCell" bundle:nil] forCellReuseIdentifier:@"FansConsumeCellID"];
             cell = [tableView dequeueReusableCellWithIdentifier:@"FansConsumeCellID"];
         }
-        [cell configDataDic:dic];
+        [cell configDataModel:_model];
         return cell;
 
     }else if (indexPath.section == 2){
@@ -196,7 +257,7 @@
             [tableView registerNib:[UINib nibWithNibName:@"FansStoreCell" bundle:nil] forCellReuseIdentifier:@"FansStoreCellID"];
             cell = [tableView dequeueReusableCellWithIdentifier:@"FansStoreCellID"];
         }
-        [cell configDataDic:dic];
+        [cell configDataModel:_model];
         return cell;
     
     }else{
@@ -205,8 +266,9 @@
             [tableView registerNib:[UINib nibWithNibName:@"FansGoodsCell" bundle:nil] forCellReuseIdentifier:@"FansGoodsCellID"];
             cell = [tableView dequeueReusableCellWithIdentifier:@"FansGoodsCellID"];
         }
-        [cell configDataDic:dic];
-        return cell;
+        FansGoodsListModel *model = self.goodsListArr[indexPath.row];
+        [cell configGoodsListModel:model];
+          return cell;
     }
     
     

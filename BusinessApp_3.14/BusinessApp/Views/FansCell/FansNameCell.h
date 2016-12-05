@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FansInfoModel.h"
 @interface FansNameCell : UITableViewCell
 
 
 @property (nonatomic, copy) void(^changeBtnBlock)();
 
-- (void)configDataDic:(NSDictionary *)dic;
+- (void)configFansInfoModel:(FansInfoModel *)model;
 
 
 @end

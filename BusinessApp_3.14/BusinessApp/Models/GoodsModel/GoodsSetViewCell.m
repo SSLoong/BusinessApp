@@ -35,8 +35,11 @@
         
     }else{
     
-        _cutLabel.text = @"立减";
-        _cutMLabel.text = [NSString stringWithFormat:@"%@元",model.sub_amount];
+        _cutLabel.text = nil;
+        _cutMLabel.text = nil;
+
+//        _cutLabel.text = @"立减";
+//        _cutMLabel.text = [NSString stringWithFormat:@"%@元",model.sub_amount];
     }
 
     
@@ -45,8 +48,9 @@
     if ([model.recommend integerValue] == 0 ) {
         _setLabel.text = nil;
     }else{
-        _setLabel.text = @"已推荐";
-        _setLabel.textColor = [UIColor colorWithHex:0xFD5B44];
+        _setLabel.text = nil;
+        //_setLabel.text = @"已推荐";
+        //_setLabel.textColor = [UIColor colorWithHex:0xFD5B44];
     }
 }
 -(void)initSubview{

@@ -237,6 +237,14 @@ ordexpress_company_ider_id:(NSString *)express_company_id
             success:(void (^)(id))success
             failure:(void (^)(NSError *))failure;
 
+//新粉丝详情
++ (void)fansInfo:(NSString *)store_id
+         fans_id:(NSString *)fans_id
+            progress:(void (^)(NSProgress *))progress
+            success:(void (^)(id))success
+            failure:(void (^)(NSError *))failure;
+
+
 //备注姓名
 + (void)edtiorname:(NSString *)customeid
               name:(NSString *)name
@@ -589,6 +597,7 @@ feedback_content:(NSString *)feedback_content
          open_branch:(NSString *)open_branch
           bank_phone:(NSString *)bank_phone
            bank_card:(NSString *)bank_card
+   open_bank_address:(NSString *)address
             progress:(void (^)(NSProgress *progress))progress
              success:(void (^)(id response))success
              failure:(void (^)(NSError *err))failure;
@@ -733,6 +742,38 @@ feedback_content:(NSString *)feedback_content
          progress:(void (^)(NSProgress *progress))progress
           success:(void (^)(id response))success
           failure:(void (^)(NSError *err))failure;
+
+//商品营销活动列表
++(void)GoodsActivityst:(NSString *)store_id
+            store_goods_id:(NSString *)store_goods_id
+                  page:(NSInteger)page
+             progress:(void (^)(NSProgress *progress))progress
+              success:(void (^)(id response))success
+              failure:(void (^)(NSError *err))failure;
+
+//添加活动
++(void)GoodsAddActivity:(NSString *)store_id
+         store_goods_id:(NSString *)store_goods_id
+                  title:(NSString *)title
+             start_time:(NSString *)start_time
+               end_time:(NSString *)end_time
+              subamount:(NSString *)subamount
+                scustid:(NSArray *)scustid
+               progress:(void (^)(NSProgress *progress))progress
+                success:(void (^)(id response))success
+                failure:(void (^)(NSError *err))failure;
+
+//查询推送用户
++(void)GoodsPushChoose:(NSString *)store_id
+        store_goods_id:(NSString *)store_goods_id
+           activity_id:(NSString *)activity_id
+                  page:(NSInteger)page
+              progress:(void (^)(NSProgress *progress))progress
+               success:(void (^)(id response))success
+               failure:(void (^)(NSError *err))failure;
+
+//添加活动
+
 
 //营销设置
 +(void)GoodsSetSubamount:(NSString *)store_goods_id

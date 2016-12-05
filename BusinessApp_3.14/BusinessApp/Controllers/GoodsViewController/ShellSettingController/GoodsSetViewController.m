@@ -374,6 +374,8 @@
     
     GoodsStateViewController * state = [[GoodsStateViewController alloc]init];
     
+    state.activityName = model.goods_name;
+    
     state.money = [model.sub_amount integerValue];
 
     state.store_goods_id = model.store_goods_id;

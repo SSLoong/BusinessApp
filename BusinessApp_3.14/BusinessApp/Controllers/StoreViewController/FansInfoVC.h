@@ -10,4 +10,6 @@
 
 @interface FansInfoVC : UIViewController
 
+@property (copy, nonatomic) NSString *fans_id;
+
 @end

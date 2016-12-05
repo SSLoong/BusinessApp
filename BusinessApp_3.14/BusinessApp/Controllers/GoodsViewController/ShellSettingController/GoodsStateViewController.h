@@ -10,6 +10,8 @@
 
 @interface GoodsStateViewController : UIViewController
 
+@property(nonatomic,copy)NSString *activityName;
+
 @property(nonatomic,copy)NSString * store_goods_id;
 
 @property(nonatomic,copy)NSString * recommend;

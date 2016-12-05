@@ -12,6 +12,8 @@
 
 @property(nonatomic,copy)NSString *bank_card;
 
+@property (nonatomic, copy)NSString *bank_cardall;
+
 @property(nonatomic,copy,setter=setId:)NSString *sId;
 
 @property(nonatomic,copy)NSString *is_default;
@@ -21,6 +23,9 @@
 @property(nonatomic,copy)NSString *name;
 
 @property(nonatomic,copy)NSString *bank_phone;
+
+@property (nonatomic,copy) NSString *open_bank_address;
+
 
 
 @end

@@ -438,6 +438,22 @@
                          progress:progress
                           success:success
                           failure:failure];
+}
+
++ (void)fansInfo:(NSString *)store_id
+         fans_id:(NSString *)fans_id
+        progress:(void (^)(NSProgress *))progress
+         success:(void (^)(id))success
+         failure:(void (^)(NSError *))failure{
+    
+    NSDictionary *params = @{@"store_id":store_id,@"id":fans_id};
+    
+    [AFHttpTool requestWihtMethod:RequestMethodTypePost
+                              url:@"/fans/info"
+                           params:params
+                         progress:progress
+                          success:success
+                          failure:failure];
     
 }
 
@@ -462,6 +478,8 @@
                           failure:failure];
     
 }
+
+
 
 
 //备注姓名
@@ -1444,13 +1462,14 @@ ordexpress_company_ider_id:(NSString *)express_company_id
          open_branch:(NSString *)open_branch
           bank_phone:(NSString *)bank_phone
            bank_card:(NSString *)bank_card
+   open_bank_address:(NSString *)address
             progress:(void (^)(NSProgress *))progress
              success:(void (^)(id))success
              failure:(void (^)(NSError *))failure{
 
 
 
-    NSDictionary *params = @{@"store_id":store_id,@"bank_code":bank_code,@"name":name,@"open_branch":open_branch,@"bank_phone":bank_phone,@"bank_card":bank_card};
+    NSDictionary *params = @{@"store_id":store_id,@"bank_code":bank_code,@"name":name,@"open_branch":open_branch,@"bank_phone":bank_phone,@"bank_card":bank_card,@"open_bank_address":address};
     [AFHttpTool requestWihtMethod:RequestMethodTypePost
                               url:@"/store/bank/add"
                            params:params
@@ -1693,6 +1712,68 @@ ordexpress_company_ider_id:(NSString *)express_company_id
     
     
 }
+
+
+//商品营销活动列表
++(void)GoodsActivityst:(NSString *)store_id
+        store_goods_id:(NSString *)store_goods_id
+                  page:(NSInteger)page
+              progress:(void (^)(NSProgress *))progress
+               success:(void (^)(id))success
+               failure:(void (^)(NSError *))failure{
+    NSString *pageString = [NSString stringWithFormat:@"%ld",(long)page];
+    NSDictionary *params = @{@"store_id":store_id,@"store_goods_id":store_goods_id,@"page":pageString};
+    [AFHttpTool requestWihtMethod:RequestMethodTypePost
+                              url:@"/goods/activity/list"
+                           params:params
+                         progress:progress
+                          success:success
+                          failure:failure];
+
+}
+
+//添加活动
++(void)GoodsAddActivity:(NSString *)store_id
+         store_goods_id:(NSString *)store_goods_id
+                  title:(NSString *)title
+             start_time:(NSString *)start_time
+               end_time:(NSString *)end_time
+              subamount:(NSString *)subamount
+                scustid:(NSArray *)scustid
+               progress:(void (^)(NSProgress *))progress
+                success:(void (^)(id))success
+                failure:(void (^)(NSError *))failure{
+    NSDictionary *params = @{@"store_id":store_id,@"store_goods_id":store_goods_id,@"title":title,@"start_time":start_time,@"end_time":end_time,@"subamount":subamount,@"scustid":scustid};
+  
+    [AFHttpTool requestWihtMethod:RequestMethodTypePost
+                              url:@"/goods/activity/add"
+                           params:params
+                         progress:progress
+                          success:success
+                          failure:failure];
+
+}
+
+//查询推送用户
+
++(void)GoodsPushChoose:(NSString *)store_id
+        store_goods_id:(NSString *)store_goods_id
+                activity_id:(NSString *)activity_id
+                  page:(NSInteger)page
+              progress:(void (^)(NSProgress *))progress
+               success:(void (^)(id))success
+               failure:(void (^)(NSError *))failure{
+    
+    NSString *pageString = [NSString stringWithFormat:@"%ld",(long)page];
+    NSDictionary *params = @{@"store_id":store_id,@"store_goods_id":store_goods_id,@"activity_id":activity_id,@"page":pageString};
+    [AFHttpTool requestWihtMethod:RequestMethodTypePost
+                              url:@"/goods/activity/customer"
+                           params:params
+                         progress:progress
+                          success:success
+                          failure:failure];
+}
+
 
 //营销设置
 +(void)GoodsSetSubamount:(NSString *)store_goods_id

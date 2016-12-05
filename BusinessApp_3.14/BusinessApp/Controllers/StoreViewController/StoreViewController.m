@@ -425,66 +425,70 @@ NSString * const ktype = @"type";//商铺类型
     
     
 }
-//店铺推广
+//营销设置
 - (IBAction)invoiceSetting:(id)sender {
     
-    _hud = [AppUtil createHUD];
-    
-    [AFHttpTool appShare:Store_id progress:^(NSProgress *progress) {
-        
-    } success:^(id response) {
-        
-        if (!([response[@"code"]integerValue]==0000)) {
-            
-            NSString *errorMessage = response [@"msg"];
-            _hud.mode = MBProgressHUDModeCustomView;
-            _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-            _hud.labelText = [NSString stringWithFormat:@"错误:%@", errorMessage];
-            [_hud hide:YES afterDelay:5];
-            
-            return;
-        }
-        
-        _titleString = response[@"data"][@"title"];
-        _url = response[@"data"][@"url"];
-        _connt = response[@"data"][@"connt"];
-        [self downloadImage:response[@"data"][@"img"]];
-        
-    } failure:^(NSError *err) {
-        _hud.mode = MBProgressHUDModeCustomView;
-        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-        _hud.labelText = @"Error";
-        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
-        [_hud hide:YES afterDelay:3];
-    }];
-}
-
-//营销设置
-- (IBAction)deliverySetting:(id)sender {
     
     GoodsSetViewController *vc = [[GoodsSetViewController alloc]init];
     
     vc.hidesBottomBarWhenPushed=YES;
     
     [self.navigationController pushViewController:vc animated:YES];
-
+    
+//    _hud = [AppUtil createHUD];
+//    
+//    [AFHttpTool appShare:Store_id progress:^(NSProgress *progress) {
+//        
+//    } success:^(id response) {
+//        
+//        if (!([response[@"code"]integerValue]==0000)) {
+//            
+//            NSString *errorMessage = response [@"msg"];
+//            _hud.mode = MBProgressHUDModeCustomView;
+//            _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+//            _hud.labelText = [NSString stringWithFormat:@"错误:%@", errorMessage];
+//            [_hud hide:YES afterDelay:5];
+//            
+//            return;
+//        }
+//        
+//        _titleString = response[@"data"][@"title"];
+//        _url = response[@"data"][@"url"];
+//        _connt = response[@"data"][@"connt"];
+//        [self downloadImage:response[@"data"][@"img"]];
+//        
+//    } failure:^(NSError *err) {
+//        _hud.mode = MBProgressHUDModeCustomView;
+//        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+//        _hud.labelText = @"Error";
+//        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
+//        [_hud hide:YES afterDelay:3];
+//    }];
 }
 
 //商品管理
-- (IBAction)storeInfo:(id)sender {
-    
-        GoodsManageViewController *vc =[[GoodsManageViewController alloc]init];
+- (IBAction)deliverySetting:(id)sender {
 
+    
+    if ([[DEFAULTS objectForKey:ktype]integerValue] == 3) {
+        GoodsManageViewController *vc =[[GoodsManageViewController alloc]init];
+        
         vc.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController pushViewController:vc animated:YES];
+
+    }else{
+        GoodsSellViewController *vc = [[GoodsSellViewController alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        vc.stocktype = 5;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+ 
+    
 }
-/**
- *  开票设置
- *
- *  @param sender
- */
-- (IBAction)setMarketingAction:(id)sender {
+
+//开票设置
+- (IBAction)storeInfo:(id)sender {
     
     OpenKicketViewController *vc= [[OpenKicketViewController alloc]init];
     
@@ -495,6 +499,19 @@ NSString * const ktype = @"type";//商铺类型
     [self.navigationController pushViewController:vc animated:YES];
 
 }
+/**
+ *  配送设置
+ *
+ *  @param sender
+ */
+- (IBAction)setMarketingAction:(id)sender {
+    
+    DeliverRangesController *vc= [[DeliverRangesController alloc]init];
+    
+    vc.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 /**
  *  配送设置
@@ -503,11 +520,7 @@ NSString * const ktype = @"type";//商铺类型
  */
 - (IBAction)inventoryManagementAction:(id)sender {
     
-    DeliverRangesController *vc= [[DeliverRangesController alloc]init];
-    
-    vc.hidesBottomBarWhenPushed = YES;
-    
-    [self.navigationController pushViewController:vc animated:YES];
+    return;
 }
 
 

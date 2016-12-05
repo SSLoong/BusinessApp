@@ -32,10 +32,15 @@
     // Initialization code
 }
 
-- (void)configDataDic:(NSDictionary *)dic{
-    self.money.text = @"¥12345";
-    self.goodsNum.text = @"(50瓶)";
-    self.percentLabel.text = @"90%";
+- (void)configGoodsListModel:(FansGoodsListModel *)model{
+    NSString *money = [NSString stringWithFormat:@"¥%@",model.money];
+    NSString *num = [NSString stringWithFormat:@"(%@瓶)",model.num];
+    
+    [self.goodsImg sd_setImageWithURL:[NSURL URLWithString:model.cover_img]];
+    self.goodName.text = model.goods_name;
+    self.money.text = money;
+    self.goodsNum.text = num;
+    self.percentLabel.text = model.result;
 
     
     

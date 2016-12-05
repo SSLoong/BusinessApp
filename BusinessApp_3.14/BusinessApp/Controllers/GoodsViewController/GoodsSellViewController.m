@@ -69,7 +69,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"在售商品";
+    self.title = @"商品库存";
     
     _page = 1;
     _brand_id = @"";
@@ -84,7 +84,14 @@
 
 -(UIView *)createChooseBtn{
     
-    UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 43)];
+
+    UIView *bgView = [[UIView alloc]init];
+    if ([[DEFAULTS objectForKey:@"type"]integerValue] == 3) {
+        bgView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 43);
+    }else{
+        bgView.frame = CGRectMake(0, 64, self.view.bounds.size.width, 43);
+    }
+    
     bgView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:bgView];
     
@@ -152,7 +159,12 @@
 
 -(void)createTableView{
     
-    _tbView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 20) style:UITableViewStylePlain];
+        if ([[DEFAULTS objectForKey:@"type"]integerValue] == 3) {
+            _tbView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 20) style:UITableViewStylePlain];
+        }else{
+            _tbView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 20) style:UITableViewStylePlain];
+        }
+    
     _tbView.dataSource = self;
     _tbView.delegate = self;
     _tbView.tableHeaderView = [self createChooseBtn];

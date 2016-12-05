@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FansInfoModel.h"
 @interface FansConsumeCell : UITableViewCell
 
 
-- (void)configDataDic:(NSDictionary *)dic;
+- (void)configDataModel:(FansInfoModel *)model;
 
 @end

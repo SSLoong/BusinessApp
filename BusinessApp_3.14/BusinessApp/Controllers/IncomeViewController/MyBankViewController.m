@@ -168,11 +168,10 @@
         
         if([model.is_default integerValue]>0){
         
-            cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"删除"
-                                                 backgroundColor:[UIColor redColor]                                                             callback:^BOOL(MGSwipeTableCell *sender) {
+            cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"删除" backgroundColor:[UIColor redColor]
+                                                callback:^BOOL(MGSwipeTableCell *sender) {
 
                                                      _hud = [AppUtil createHUD];
-                                                     
                                                      _hud.userInteractionEnabled = NO;
                                                      
                                                      [AFHttpTool incomeDeleteBank:Store_id bank_id:model.sId progress:^(NSProgress *progress) {
@@ -212,7 +211,7 @@
 
         }else{
         
-            cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"删除" backgroundColor:     [UIColor redColor] callback:^BOOL(MGSwipeTableCell *sender) {
+            cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"删除" backgroundColor: [UIColor redColor] callback:^BOOL(MGSwipeTableCell *sender) {
                 
                 _hud = [AppUtil createHUD];
                 
@@ -248,11 +247,8 @@
                     [_hud hide:YES afterDelay:3];
                     
                 }];
-                
-                
                                                     return YES;
                                 }],[MGSwipeButton buttonWithTitle:@"默认" backgroundColor:[UIColor lightGrayColor]callback:^BOOL(MGSwipeTableCell *sender) {
-                                    
                                     
                                     _hud = [AppUtil createHUD];
                                     

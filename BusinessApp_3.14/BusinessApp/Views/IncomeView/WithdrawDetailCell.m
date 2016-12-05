@@ -104,6 +104,7 @@
     _moneyLabel.text = amountStr;
     _timeLabel.text = model.apply_time;
     
+    
     if ([model.status integerValue] == 2 || [model.status integerValue] == 3){
         self.commentLabel.text = @"提现失败";
     }else if ([model.status integerValue] == 4){
