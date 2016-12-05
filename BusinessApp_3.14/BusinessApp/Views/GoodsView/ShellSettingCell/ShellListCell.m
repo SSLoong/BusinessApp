@@ -32,7 +32,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    self.discountLabel.backgroundColor = [UIColor redColor];
+    self.discountLabel.backgroundColor = [UIColor colorWithHex:0Xfd654e];
     self.discountLabel.textColor = [UIColor whiteColor];
     
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.discountLabel.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerBottomLeft cornerRadii:CGSizeMake(5, 5)];
@@ -42,7 +42,7 @@
     self.discountLabel.layer.mask = maskLayer;
 
     self.moneyLabel.backgroundColor = [UIColor whiteColor];
-    self.moneyLabel.textColor = [UIColor redColor];
+    self.moneyLabel.textColor = [UIColor  colorWithHex:0Xfd654e];
     
     
     self.moneyLabel.layer.borderColor = [UIColor redColor].CGColor;//边框颜色,要为CGColor
@@ -53,17 +53,27 @@
     // Initialization code
 }
 
-- (void)configDataModel:(NSDictionary *)model{
-    self.nameLabel.text = @"不是给谁一瓶雪花，都能陪你勇闯天涯";
-    self.discountLabel.text = @"满赠";
-    self.moneyLabel.text = @"9999元";
+- (void)configDataModel:(GoodsStateModel *)model{
+    self.nameLabel.text = model.activity_name;
+    self.discountLabel.text = model.strategy;
+    self.moneyLabel.text =  [NSString stringWithFormat:@" %@元",model.sub_amount];
     
-    self.peopleNum.text = @"已推送39人";
-
+    NSString *startTime = [model.start_time substringToIndex:10];
+    NSString *endTime = [model.end_time substringToIndex:10];
+    
+    
+    self.timeLabelOne.text = startTime;
+    self.timeLabelTwo.text = endTime;
+    NSString *num = [NSString stringWithFormat:@"已推送%@人",model.cust_num];
+    self.peopleNum.text = num;
 
 }
 
-
+- (IBAction)pushNumEvent:(id)sender {
+    if (self.PushTapBlock) {
+        self.PushTapBlock();
+    }
+}
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -207,6 +207,12 @@
 		3FFB06961C96DF7300BC48C7 /* BankListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB06951C96DF7300BC48C7 /* BankListModel.m */; };
 		3FFB06991C96E04300BC48C7 /* BankListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB06981C96E04300BC48C7 /* BankListTableViewCell.m */; };
 		585C794942A67B24D21BE2BF /* libPods-BusinessApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C0BE2AB4FA9EEC7677E78C /* libPods-BusinessApp.a */; };
+		5B0F04B81DEFE9E400B41BBE /* PushChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0F04B71DEFE9E300B41BBE /* PushChooseModel.m */; };
+		5B0F04BB1DEFFE5700B41BBE /* GoodsStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0F04BA1DEFFE5700B41BBE /* GoodsStateModel.m */; };
+		5B0F04BE1DF02A7300B41BBE /* PushedPeopleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0F04BD1DF02A7300B41BBE /* PushedPeopleVC.m */; };
+		5B14C5F71DED792900D213F5 /* PushChooseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B14C5F61DED792900D213F5 /* PushChooseVC.m */; };
+		5B14C5FB1DEDB15300D213F5 /* PushChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B14C5F91DEDB15300D213F5 /* PushChooseCell.m */; };
+		5B14C5FC1DEDB15300D213F5 /* PushChooseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B14C5FA1DEDB15300D213F5 /* PushChooseCell.xib */; };
 		5B150C5B1D910C9500159D8B /* SourceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B150C5A1D910C9500159D8B /* SourceListViewController.m */; };
 		5B150C5E1D9286E600159D8B /* ApplyForActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B150C5D1D9286E600159D8B /* ApplyForActivityVC.m */; };
 		5B150C611D940CBB00159D8B /* goodsDicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B150C601D940CBB00159D8B /* goodsDicModel.m */; };
@@ -700,6 +706,17 @@
 		3FFB06971C96E04300BC48C7 /* BankListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankListTableViewCell.h; sourceTree = "<group>"; };
 		3FFB06981C96E04300BC48C7 /* BankListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankListTableViewCell.m; sourceTree = "<group>"; };
 		40A103096F84A9B5C5859BF5 /* Pods-BusinessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusinessApp/Pods-BusinessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5B0F04B61DEFE9E300B41BBE /* PushChooseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushChooseModel.h; sourceTree = "<group>"; };
+		5B0F04B71DEFE9E300B41BBE /* PushChooseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushChooseModel.m; sourceTree = "<group>"; };
+		5B0F04B91DEFFE5700B41BBE /* GoodsStateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsStateModel.h; sourceTree = "<group>"; };
+		5B0F04BA1DEFFE5700B41BBE /* GoodsStateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsStateModel.m; sourceTree = "<group>"; };
+		5B0F04BC1DF02A7300B41BBE /* PushedPeopleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushedPeopleVC.h; sourceTree = "<group>"; };
+		5B0F04BD1DF02A7300B41BBE /* PushedPeopleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushedPeopleVC.m; sourceTree = "<group>"; };
+		5B14C5F51DED792900D213F5 /* PushChooseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushChooseVC.h; sourceTree = "<group>"; };
+		5B14C5F61DED792900D213F5 /* PushChooseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushChooseVC.m; sourceTree = "<group>"; };
+		5B14C5F81DEDB15300D213F5 /* PushChooseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushChooseCell.h; sourceTree = "<group>"; };
+		5B14C5F91DEDB15300D213F5 /* PushChooseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushChooseCell.m; sourceTree = "<group>"; };
+		5B14C5FA1DEDB15300D213F5 /* PushChooseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushChooseCell.xib; sourceTree = "<group>"; };
 		5B150C591D910C9500159D8B /* SourceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceListViewController.h; sourceTree = "<group>"; };
 		5B150C5A1D910C9500159D8B /* SourceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceListViewController.m; sourceTree = "<group>"; };
 		5B150C5C1D9286E600159D8B /* ApplyForActivityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplyForActivityVC.h; sourceTree = "<group>"; };
@@ -1157,6 +1174,10 @@
 				3F93C73B1D3CC18600311919 /* AwardModel.m */,
 				5BBCE0C31DB4E63900697AC9 /* SalesAwardModel.h */,
 				5BBCE0C41DB4E63900697AC9 /* SalesAwardModel.m */,
+				5B0F04B61DEFE9E300B41BBE /* PushChooseModel.h */,
+				5B0F04B71DEFE9E300B41BBE /* PushChooseModel.m */,
+				5B0F04B91DEFFE5700B41BBE /* GoodsStateModel.h */,
+				5B0F04BA1DEFFE5700B41BBE /* GoodsStateModel.m */,
 			);
 			path = GoodsModel;
 			sourceTree = "<group>";
@@ -1832,12 +1853,16 @@
 		5B4A20B91DE7FFC100271B01 /* ShellSettingController */ = {
 			isa = PBXGroup;
 			children = (
-				5B4A20D71DEC38CC00271B01 /* GoodsAddViewController.h */,
-				5B4A20D81DEC38CC00271B01 /* GoodsAddViewController.m */,
 				5B4A20BA1DE7FFC100271B01 /* GoodsSetViewController.h */,
 				5B4A20BB1DE7FFC100271B01 /* GoodsSetViewController.m */,
 				5B4A20BC1DE7FFC100271B01 /* GoodsStateViewController.h */,
 				5B4A20BD1DE7FFC100271B01 /* GoodsStateViewController.m */,
+				5B0F04BC1DF02A7300B41BBE /* PushedPeopleVC.h */,
+				5B0F04BD1DF02A7300B41BBE /* PushedPeopleVC.m */,
+				5B4A20D71DEC38CC00271B01 /* GoodsAddViewController.h */,
+				5B4A20D81DEC38CC00271B01 /* GoodsAddViewController.m */,
+				5B14C5F51DED792900D213F5 /* PushChooseVC.h */,
+				5B14C5F61DED792900D213F5 /* PushChooseVC.m */,
 			);
 			path = ShellSettingController;
 			sourceTree = "<group>";
@@ -1848,6 +1873,9 @@
 				5B4A20C11DE8797800271B01 /* ShellListCell.h */,
 				5B4A20C21DE8797800271B01 /* ShellListCell.m */,
 				5B4A20C31DE8797800271B01 /* ShellListCell.xib */,
+				5B14C5F81DEDB15300D213F5 /* PushChooseCell.h */,
+				5B14C5F91DEDB15300D213F5 /* PushChooseCell.m */,
+				5B14C5FA1DEDB15300D213F5 /* PushChooseCell.xib */,
 			);
 			path = ShellSettingCell;
 			sourceTree = "<group>";
@@ -2207,6 +2235,7 @@
 				3FCB21A51D07FC8B00773C49 /* MinMoney.storyboard in Resources */,
 				3FC355251D48C63C00D7CF30 /* dotimeout.js in Resources */,
 				3FC355121D48C63C00D7CF30 /* style.css in Resources */,
+				5B14C5FC1DEDB15300D213F5 /* PushChooseCell.xib in Resources */,
 				6F2D61861D7D6C2E003D6C73 /* FansDetailsCell.xib in Resources */,
 				5B16F91A1DE2D70400A646CF /* FansStoreCell.xib in Resources */,
 				3FC355221D48C63C00D7CF30 /* sjk.png in Resources */,
@@ -2385,6 +2414,7 @@
 				3FA7BEF31CC8E16100E6A1AF /* GoodsViewCell.m in Sources */,
 				3FB2F3701C883DA1005CC080 /* PostDataTableViewController.m in Sources */,
 				5BBCE09B1DB0B6E200697AC9 /* NSMutableDictionary+BlocksKit.m in Sources */,
+				5B14C5FB1DEDB15300D213F5 /* PushChooseCell.m in Sources */,
 				5B4A20C81DE9A05400271B01 /* FansRewardModel.m in Sources */,
 				5B883A2B1DDEE68200E1E4D7 /* FansRcordCell.m in Sources */,
 				BAC592B61D8E62FC0099FC28 /* SpecialDetailViewController.m in Sources */,
@@ -2414,6 +2444,7 @@
 				3F4869571CB507DB002B0A50 /* MangerModel.m in Sources */,
 				5BBCDFD71DAE174A00697AC9 /* RevisedPriceVC.m in Sources */,
 				5BBCDFBE1DACBF6B00697AC9 /* ActionSheetCustomPicker.m in Sources */,
+				5B0F04B81DEFE9E400B41BBE /* PushChooseModel.m in Sources */,
 				5B4A20DA1DEC38CC00271B01 /* GoodsAddViewController.m in Sources */,
 				6F0E4D5E1D65C1350051B55B /* UIView+Extension.m in Sources */,
 				5BBCE0A51DB0B6E200697AC9 /* A2BlockInvocation.m in Sources */,
@@ -2463,6 +2494,7 @@
 				6FF10BA21D794F3600760FB3 /* ChooseCustomerCell.m in Sources */,
 				5BBCE09F1DB0B6E200697AC9 /* NSObject+BKAssociatedObjects.m in Sources */,
 				3FCB21B51D07FE2E00773C49 /* main.m in Sources */,
+				5B0F04BB1DEFFE5700B41BBE /* GoodsStateModel.m in Sources */,
 				5BBCDF861DABA7B200697AC9 /* DateSiftViewController.m in Sources */,
 				3FBC0D931C86F729004BFF33 /* PasswordTextField.m in Sources */,
 				5B37E7631DA8F2A7007D8660 /* RedDetailstCell.m in Sources */,
@@ -2522,6 +2554,7 @@
 				3FF82F661C857E85005C28E2 /* UIColor+Util.m in Sources */,
 				3FB314341CB667EE00C8E3AD /* StoresModel.m in Sources */,
 				5BBCDFCD1DACC10D00697AC9 /* NSDate+Helper.m in Sources */,
+				5B0F04BE1DF02A7300B41BBE /* PushedPeopleVC.m in Sources */,
 				3FC426A81C99558B0045EB75 /* IncomeGoodsController.m in Sources */,
 				5BBCE0A71DB0B6E200697AC9 /* NSCache+BlocksKit.m in Sources */,
 				3FBC0D861C86B834004BFF33 /* LoginViewController.m in Sources */,
@@ -2534,6 +2567,7 @@
 				3F8E081A1CE5B3C600C312E4 /* SearchResultModel.m in Sources */,
 				5B37E7601DA8F1EE007D8660 /* RedListViewController.m in Sources */,
 				3F138B0F1CFED79500CC67FE /* GeneralViewCell.m in Sources */,
+				5B14C5F71DED792900D213F5 /* PushChooseVC.m in Sources */,
 				6FFE95C91D744BFC00234747 /* AddGoodSTwoVC.m in Sources */,
 				3F7701AA1C9BD94F009A9761 /* withdrawModel.m in Sources */,
 				3F8321E01CA50C73002C9850 /* GoodsWayCell.m in Sources */,

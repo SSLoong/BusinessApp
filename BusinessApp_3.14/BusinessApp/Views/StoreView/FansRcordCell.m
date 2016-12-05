@@ -45,26 +45,30 @@
     
     NSArray *colorArr = [[NSArray alloc]init];
     if (modle.brands.count == 1) {
-        colorArr = @[[UIColor colorWithHex:323232]];
+        colorArr = @[[UIColor colorWithHex:0x323232]];
     }else if (modle.brands.count == 2){
-        colorArr = @[[UIColor colorWithHex:323232],[UIColor colorWithHex:555555]];
+        colorArr = @[[UIColor colorWithHex:0x323232],[UIColor colorWithHex:0x555555]];
     }else if (modle.brands.count == 3){
-        colorArr = @[[UIColor colorWithHex:323232],[UIColor colorWithHex:555555],[UIColor colorWithHex:787878]];
+        colorArr = @[[UIColor colorWithHex:0x323232],[UIColor colorWithHex:0x555555],[UIColor colorWithHex:0x787878]];
     }else if (modle.brands.count == 4){
-        colorArr = @[[UIColor colorWithHex:323232],[UIColor colorWithHex:555555],[UIColor colorWithHex:787878],[UIColor colorWithHex:0x9b9b9b]];
+        colorArr = @[[UIColor colorWithHex:0x323232],[UIColor colorWithHex:0x555555],[UIColor colorWithHex:0x787878],[UIColor colorWithHex:0x9b9b9b]];
     }else{
-        colorArr = @[[UIColor colorWithHex:323232],[UIColor colorWithHex:555555],[UIColor colorWithHex:787878],[UIColor colorWithHex:0x9b9b9b],[UIColor colorWithHex:0xbebebe]];
+        colorArr = @[[UIColor colorWithHex:0x323232],[UIColor colorWithHex:0x555555],[UIColor colorWithHex:0x787878],[UIColor colorWithHex:0x9b9b9b],[UIColor colorWithHex:0xbebebe]];
     }
 
     self.name.text = modle.memo;
     self.phone.text = modle.phone;
     self.sotreLevel.text = modle.store_level;
     self.consumeLevel.text = modle.platform_level;
-  
-    self.tagsView.tagStrings = modle.brands;
-    self.tagsView.tagColors = @[[UIColor blackColor],[UIColor blackColor],[UIColor grayColor],[UIColor grayColor],[UIColor lightGrayColor]];
-
+    if (modle.brands.count > 5) {
+        NSArray *smallArray = [modle.brands subarrayWithRange:NSMakeRange(0, 5)];
+        self.tagsView.tagStrings = smallArray;
+    }else{
+        self.tagsView.tagStrings = modle.brands;
+    }
     
+    self.tagsView.tagColors = colorArr;
+
 }
 
 

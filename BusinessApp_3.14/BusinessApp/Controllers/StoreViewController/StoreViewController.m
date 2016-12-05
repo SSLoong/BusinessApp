@@ -469,12 +469,21 @@ NSString * const ktype = @"type";//商铺类型
 //商品管理
 - (IBAction)deliverySetting:(id)sender {
 
-    GoodsManageViewController *vc =[[GoodsManageViewController alloc]init];
     
-    vc.hidesBottomBarWhenPushed = YES;
-    
-    [self.navigationController pushViewController:vc animated:YES];
+    if ([[DEFAULTS objectForKey:ktype]integerValue] == 3) {
+        GoodsManageViewController *vc =[[GoodsManageViewController alloc]init];
+        
+        vc.hidesBottomBarWhenPushed = YES;
+        
+        [self.navigationController pushViewController:vc animated:YES];
 
+    }else{
+        GoodsSellViewController *vc = [[GoodsSellViewController alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
+        vc.stocktype = 5;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+ 
     
 }
 

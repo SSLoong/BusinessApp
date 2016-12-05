@@ -81,7 +81,11 @@
 		tag.textLabel.text = tagString;
 		tag.textLabel.font = self.font;
         if (self.tagColors.count > 0) {
+            if (idx >= self.tagColors.count) {
+                return ;
+            };
             tag.textLabel.textColor = self.tagColors[idx];
+         
         }else{
             tag.textLabel.textColor = self.textColor;
         }

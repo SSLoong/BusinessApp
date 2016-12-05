@@ -743,6 +743,38 @@ feedback_content:(NSString *)feedback_content
           success:(void (^)(id response))success
           failure:(void (^)(NSError *err))failure;
 
+//商品营销活动列表
++(void)GoodsActivityst:(NSString *)store_id
+            store_goods_id:(NSString *)store_goods_id
+                  page:(NSInteger)page
+             progress:(void (^)(NSProgress *progress))progress
+              success:(void (^)(id response))success
+              failure:(void (^)(NSError *err))failure;
+
+//添加活动
++(void)GoodsAddActivity:(NSString *)store_id
+         store_goods_id:(NSString *)store_goods_id
+                  title:(NSString *)title
+             start_time:(NSString *)start_time
+               end_time:(NSString *)end_time
+              subamount:(NSString *)subamount
+                scustid:(NSArray *)scustid
+               progress:(void (^)(NSProgress *progress))progress
+                success:(void (^)(id response))success
+                failure:(void (^)(NSError *err))failure;
+
+//查询推送用户
++(void)GoodsPushChoose:(NSString *)store_id
+        store_goods_id:(NSString *)store_goods_id
+           activity_id:(NSString *)activity_id
+                  page:(NSInteger)page
+              progress:(void (^)(NSProgress *progress))progress
+               success:(void (^)(id response))success
+               failure:(void (^)(NSError *err))failure;
+
+//添加活动
+
+
 //营销设置
 +(void)GoodsSetSubamount:(NSString *)store_goods_id
                subamount:(NSString *)subamount

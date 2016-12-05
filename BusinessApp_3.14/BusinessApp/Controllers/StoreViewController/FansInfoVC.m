@@ -138,7 +138,6 @@
         
     } success:^(id response) {
         
-        NSLog(@"==========%@==========",response);
         
         if (!([response[@"code"]integerValue] == 0000)) {
             NSString *erroeMessage = response[@"msg"];

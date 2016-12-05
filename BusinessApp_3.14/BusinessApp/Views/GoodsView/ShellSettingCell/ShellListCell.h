@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GoodsStateModel.h"
 @interface ShellListCell : UITableViewCell
 
+@property (nonatomic, copy) void(^PushTapBlock)();
 
-- (void)configDataModel:(NSDictionary *)model;
+- (void)configDataModel:(GoodsStateModel *)model;
 
 
 @end

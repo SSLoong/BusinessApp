@@ -54,11 +54,11 @@
                         <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥1000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3y-Ep-KDd">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="¥1000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3y-Ep-KDd">
                         <rect key="frame" x="146" y="39" width="68" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="2qw-Tw-8Pc"/>
-                            <constraint firstAttribute="width" constant="68" id="7GC-He-r9s"/>
+                            <constraint firstAttribute="width" priority="300" constant="68" id="7GC-He-r9s"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,10 +75,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgw-cw-AaJ">
-                        <rect key="frame" x="146" y="59" width="42" height="21"/>
+                        <rect key="frame" x="146" y="59" width="68" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="13r-fa-onK"/>
-                            <constraint firstAttribute="width" constant="42" id="HaQ-LP-uzL"/>
+                            <constraint firstAttribute="width" constant="68" id="HaQ-LP-uzL"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>

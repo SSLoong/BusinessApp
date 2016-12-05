@@ -10,4 +10,8 @@
 
 @interface GoodsAddViewController : UIViewController
 
+@property (nonatomic, strong) NSString *activityName;
+
+@property (nonatomic, strong) NSString *store_goods_id;
+
 @end
