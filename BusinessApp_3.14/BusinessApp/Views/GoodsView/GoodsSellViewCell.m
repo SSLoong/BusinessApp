@@ -42,16 +42,13 @@
     _subsidyLabel.attributedText = Mstr;
     
     
-    if([model.status  isEqualToString:@"0"]|| [model.status isEqualToString:@"2"]){
+    if([model.status  isEqualToString:@"0"]){
         _stateBtn.hidden = NO;
         [_stateBtn setImage:[UIImage imageNamed:@"Goods_sale_off"] forState:UIControlStateNormal];
     }else if ([model.status isEqualToString:@"1"]){
         _stateBtn.hidden = NO;
         [_stateBtn setImage:[UIImage imageNamed:@"Goods_sale_on"] forState:UIControlStateNormal];
-    }else{
-        _stateBtn.hidden = YES;
     }
-
 }
 
 

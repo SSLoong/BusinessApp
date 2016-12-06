@@ -366,20 +366,22 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    GoodsSellModel *model = self.dataArray[indexPath.row];
-
-    if (model.status.length <= 0) {
-        return;
-    };
-    
-    
-    if ([[DEFAULTS objectForKey:@"type"]integerValue] != 3 && self.stocktype == 1) {
+//    GoodsSellModel *model = self.dataArray[indexPath.row];
+//
+//    if (model.status.length <= 0) {
+//        return;
+//    };
+//    
+//    
+   // if ([[DEFAULTS objectForKey:@"type"]integerValue] != 3 && self.stocktype == 1) {
         GoodsSellModel *model = self.dataArray[indexPath.row];
         
         AddGoodsViewController *vc = [[AddGoodsViewController alloc]init];
         
         vc.goods_id = model.goods_id;
-        
+    
+        vc.dealer_goods_id = model.dealer_goods_id;
+    
         vc.refreshView = ^(){
             
             [_tbView.mj_header beginRefreshing];
@@ -387,7 +389,7 @@
         };
         
         [self.navigationController pushViewController:vc animated:YES];
-    }
+    //}
     
     
 }

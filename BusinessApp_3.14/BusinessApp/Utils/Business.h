@@ -13,9 +13,9 @@
 #define DEFAULTS [NSUserDefaults standardUserDefaults]
 #define ShareApplicationDelegate [[UIApplication sharedApplication] delegate]
 //#define SITE_SERVER @"http://10.211.55.4:80/store"
-//#define SITE_SERVER @"http://139.196.13.82:88/store"
+#define SITE_SERVER @"http://139.196.13.82:88/store"
 //#define SITE_SERVER @"http://10.211.55.117:8080/store"
-#define SITE_SERVER @"http://api.appsjk.com/store"
+//#define SITE_SERVER @"http://api.appsjk.com/store"
 //#define SITE_SERVER @"http://10.211.56.14:8080/store"
 
 
