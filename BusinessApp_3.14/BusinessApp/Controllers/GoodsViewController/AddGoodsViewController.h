@@ -13,6 +13,8 @@ typedef void(^refreshView)();
 
 @property(nonatomic,copy)NSString *goods_id;
 
+@property (nonatomic, copy) NSString *dealer_goods_id;
+
 @property(nonatomic,copy)refreshView refreshView;
 
 @end

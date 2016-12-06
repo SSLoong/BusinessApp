@@ -43,8 +43,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    self.title = @"添加库存";
+    self.title = @"编辑商品";
     
+    UIBarButtonItem *releaseButon=[[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStylePlain target:self action:@selector(addAction)];
+    self.navigationItem.rightBarButtonItem=releaseButon;
+
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
 
     
@@ -181,6 +184,7 @@
     _textFiled2.clearButtonMode = UITextFieldViewModeWhileEditing;
     _textFiled2.placeholder = @"请输入进货价";
     _textFiled2.text = _purchase_price;
+    _textFiled2.enabled = NO;
     [view3 addSubview:_textFiled2];
     
     
@@ -213,44 +217,6 @@
     _textFiled3.text = _real_price;
     [view4 addSubview:_textFiled3];
     
-    
-    UIView *view5 = [UIView new];
-    view5.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:view5];
-    
-    UILabel *bLabel5 = [UILabel new];
-    bLabel5.text = @"*";
-    bLabel5.textColor = [UIColor redColor];
-    bLabel5.font = [UIFont systemFontOfSize:10];
-    [view5 addSubview:bLabel5];
-
-    UILabel *label5 = [UILabel new];
-    label5.text = @"数量:";
-    label5.font = [UIFont systemFontOfSize:10];
-    [view5 addSubview:label5];
-    
-    UILabel *mLabel5 = [UILabel new];
-    mLabel5.text = @"¥";
-    mLabel5.font = [UIFont systemFontOfSize:10];
-    [view5 addSubview:mLabel5];
-
-    _textFiled4 = [UITextField new];
-    _textFiled4.keyboardType = UIKeyboardTypeNumberPad;
-    _textFiled4.font = [UIFont systemFontOfSize:16];
-    _textFiled4.clearButtonMode = UITextFieldViewModeWhileEditing;
-    _textFiled4.placeholder = @"请输入销售数量";
-    _textFiled4.text = _stock;
-    [view5 addSubview:_textFiled4];
-    
-    
-    UIButton *addBtn = [UIButton new];
-    [addBtn setBackgroundColor:[UIColor colorWithHex:0xFD5B44]];
-    [addBtn setTitle:@"确定" forState:UIControlStateNormal];
-    addBtn.layer.cornerRadius = 3;
-    [addBtn addTarget:self action:@selector(addAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:addBtn];
-    
-
     
     [view0 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(69);
@@ -315,12 +281,6 @@
         make.left.mas_equalTo(55);
     }];
     
-    [_textFiled4 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.right.bottom.mas_equalTo(0);
-        make.left.mas_equalTo(55);
-    }];
-
-    
     
     [view3 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(view2.mas_bottom).offset(1.f);
@@ -364,41 +324,6 @@
         make.top.mas_equalTo(28);
     }];
     
-    
-    
-    [view5 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(view4.mas_bottom).offset(1.f);
-        make.left.right.mas_equalTo(0);
-        make.height.mas_equalTo(50);
-    }];
-    
-    
-    [bLabel5 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.mas_equalTo(10);
-    }];
-    
-    
-    
-    [label5 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(10);
-        make.left.mas_equalTo(20);
-    }];
-    
-    [mLabel5 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(10);
-        make.top.mas_equalTo(28);
-    }];
-    
-    
-    [addBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(-10);
-        make.left.mas_equalTo(10);
-        make.right.mas_equalTo(-10);
-        make.height.mas_equalTo(36);
-        
-    }];
-    
-    
 }
 
 -(void)addAction{
@@ -431,21 +356,10 @@
         return;
     }
     
-    if(_textFiled4.text.length == 0){
-        _hud.mode = MBProgressHUDModeCustomView;
-        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-        _hud.labelText = @"请输入数量";
-        [_hud hide:YES afterDelay:2];
-        return;
-    }
-    
-    
     [AFHttpTool GoodsAdd:Store_id
-                goods_id:_goods_id
-                   price:_textFiled1.text
-              real_price:_textFiled3.text
-          purchase_price:_textFiled2.text
-                   stock:_textFiled4.text
+                goods_id:_dealer_goods_id
+                mk_price:_textFiled1.text
+                   price:_textFiled3.text
                  progress:^(NSProgress *progress) {
                      
                      

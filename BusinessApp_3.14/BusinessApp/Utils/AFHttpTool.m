@@ -1646,17 +1646,15 @@ ordexpress_company_ider_id:(NSString *)express_company_id
 //非连锁添加上库存
 +(void)GoodsAdd:(NSString *)store_id
        goods_id:(NSString *)goods_id
+       mk_price:(NSString *)mk_price
           price:(NSString *)price
-     real_price:(NSString *)real_price
- purchase_price:(NSString *)purchase_price
-          stock:(NSString *)stock
        progress:(void (^)(NSProgress *progress))progress
         success:(void (^)(id response))success
         failure:(void (^)(NSError *err))failure{
 
-    NSDictionary *params = @{@"store_id":store_id,@"goods_id":goods_id,@"price":price,@"real_price":real_price,@"purchase_price":purchase_price,@"stock":stock,@"type":@"1"};
+    NSDictionary *params = @{@"store_id":store_id,@"store_goods_id":goods_id,@"price":price,@"mkprice":mk_price,};
     [AFHttpTool requestWihtMethod:RequestMethodTypePost
-                              url:@"/goods/add"
+                              url:@"/goods/update/price"
                            params:params
                          progress:progress
                           success:success

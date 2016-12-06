@@ -711,10 +711,8 @@ feedback_content:(NSString *)feedback_content
 //非连锁添加上库存
 +(void)GoodsAdd:(NSString *)store_id
        goods_id:(NSString *)goods_id
+       mk_price:(NSString *)mk_price
           price:(NSString *)price
-     real_price:(NSString *)real_price
- purchase_price:(NSString *)purchase_price
-          stock:(NSString *)stock
        progress:(void (^)(NSProgress *progress))progress
         success:(void (^)(id response))success
         failure:(void (^)(NSError *err))failure;

@@ -33,7 +33,6 @@
     
     UIBarButtonItem *releaseButon = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(FansScreenBtn:)];
     self.navigationItem.rightBarButtonItem=releaseButon;
-    
     self.nameStr = [[NSString alloc]init];
     
     [self initData];

@@ -80,13 +80,13 @@
     [_haveSaleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_goodsImg.mas_right).offset(10);
         make.top.equalTo(_goodsName.mas_bottom).offset(20);
-        make.size.mas_equalTo(CGSizeMake(150, 15));
+        make.size.mas_equalTo(CGSizeMake(200, 15));
     }];
     
     [_moneyLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_goodsImg.mas_right).offset(10);
         make.top.equalTo(_haveSaleLabel.mas_bottom).offset(5);
-        make.size.mas_equalTo(CGSizeMake(180, 15));
+        make.size.mas_equalTo(CGSizeMake(300, 15));
     }];
 }
 
