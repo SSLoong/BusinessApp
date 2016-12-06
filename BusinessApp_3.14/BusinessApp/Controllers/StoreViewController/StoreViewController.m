@@ -418,7 +418,8 @@ NSString * const ktype = @"type";//商铺类型
 - (IBAction)shareStore:(id)sender {
     
     
-    FansRecordVC * vc = VCWithStoryboardNameAndVCIdentity(@"StoreInfo", @"FansRecordVC");
+    //FansRecordVC * vc = VCWithStoryboardNameAndVCIdentity(@"StoreInfo", @"FansRecordVC");
+    FansRecordVC *vc = [[FansRecordVC alloc]init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 
