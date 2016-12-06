@@ -17,7 +17,7 @@
 
 @interface FansRecordVC ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray * data;//tableView数据源
 @property (strong, nonatomic) NSArray * dic;//请求到的数据
 @property (assign, nonatomic) NSInteger page;//分页参数
@@ -29,12 +29,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
     
+    
+    self.title = @"客户管理";
+    
+     self.navigationController.navigationBar.translucent = NO;
+        
     UIBarButtonItem *releaseButon = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(FansScreenBtn:)];
     self.navigationItem.rightBarButtonItem=releaseButon;
     self.nameStr = [[NSString alloc]init];
-    
     [self initData];
     [self initUI];
     
@@ -51,13 +54,14 @@
 //初始化UI
 - (void)initUI
 {
+    
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.automaticallyAdjustsScrollViewInsets = YES;
+    //self.automaticallyAdjustsScrollViewInsets = YES;
+    [self.view addSubview:_tableView];
     
     [self.tableView registerNib: [UINib nibWithNibName:@"FansRcordCell" bundle:nil] forCellReuseIdentifier:@"FansRcordCellID"];
     
