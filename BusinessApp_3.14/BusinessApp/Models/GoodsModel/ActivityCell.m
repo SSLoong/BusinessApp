@@ -167,8 +167,11 @@
         _statuLabel.textColor = [UIColor orangeColor];
     }
     
-    //if ([model.award_num integerValue] != 0) {
-        NSString *jiangliString  = [NSString stringWithFormat:@"奖励：%@元/瓶[最高%@元]",model.award_num,model.upper_award_num];
+    if ([model.award_type isEqualToString:@""]) {
+        _jiangliLabel.attributedText = nil;
+    }else{
+    
+    NSString *jiangliString  = [NSString stringWithFormat:@"奖励：%@元/瓶[最高%@元]",model.award_num,model.upper_award_num];
         NSRange range = [jiangliString rangeOfString:@"/瓶[最高"];
         NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:jiangliString];
         [str addAttribute:NSForegroundColorAttributeName value:[UIColor lightGrayColor] range:range];
@@ -176,8 +179,7 @@
         [str addAttribute:NSForegroundColorAttributeName value:[UIColor lightGrayColor] range:NSMakeRange(0,3)];
         
         _jiangliLabel.attributedText = str;
-    // }
-    
+    }
     if ([model.isapply integerValue] ==1) {
         _isInLabel.text = @"已参加";
         _isInLabel.textColor = [UIColor lightGrayColor];

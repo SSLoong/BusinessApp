@@ -76,11 +76,13 @@
         if (!([response[@"code"]integerValue]==0000)) {
             
             NSString *errorMessage = response [@"msg"];
-            _hud.mode = MBProgressHUDModeCustomView;
-            _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-            _hud.labelText = [NSString stringWithFormat:@"错误:%@", errorMessage];
-            [_hud hide:YES afterDelay:3];
+//            _hud.mode = MBProgressHUDModeCustomView;
+//            _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+//            _hud.labelText = [NSString stringWithFormat:@"错误:%@", errorMessage];
+                [_hud hide:YES afterDelay:3];
+            [UIAlertView bk_showAlertViewWithTitle:@"提示" message: errorMessage cancelButtonTitle:@"确定" otherButtonTitles:nil handler:nil];
             
+
             return;
         }
 
@@ -112,11 +114,14 @@
         
     } failure:^(NSError *err) {
         
-        _hud.mode = MBProgressHUDModeCustomView;
-        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-        _hud.labelText = @"Error";
-        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
-        [_hud hide:YES afterDelay:3];
+        [UIAlertView bk_showAlertViewWithTitle:@"提示" message: err.userInfo[NSLocalizedDescriptionKey] cancelButtonTitle:@"确定" otherButtonTitles:nil handler:nil];
+        
+//        
+//        _hud.mode = MBProgressHUDModeCustomView;
+//        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+//        _hud.labelText = @"Error";
+//        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
+            [_hud hide:YES afterDelay:3];
         
     }];
 
@@ -132,10 +137,15 @@
         if (!([response[@"code"]integerValue]==0000)) {
             
             NSString *errorMessage = response [@"msg"];
-            _hud.mode = MBProgressHUDModeCustomView;
-            _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-            _hud.labelText = [NSString stringWithFormat:@"错误:%@", errorMessage];
-            [_hud hide:YES afterDelay:3];
+//            _hud.mode = MBProgressHUDModeCustomView;
+//            _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+//            _hud.labelText = [NSString stringWithFormat:@"错误:%@", errorMessage];
+                [_hud hide:YES afterDelay:3];
+            
+            [UIAlertView bk_showAlertViewWithTitle:@"提示" message: errorMessage cancelButtonTitle:@"确定" otherButtonTitles:nil handler:nil];
+            
+
+            
             
             return;
         }
@@ -163,11 +173,15 @@
         
     } failure:^(NSError *err) {
         
-        _hud.mode = MBProgressHUDModeCustomView;
-        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-        _hud.labelText = @"Error";
-        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
-        [_hud hide:YES afterDelay:3];
+        
+        
+        [UIAlertView bk_showAlertViewWithTitle:@"提示" message: err.userInfo[NSLocalizedDescriptionKey] cancelButtonTitle:@"确定" otherButtonTitles:nil handler:nil];
+    
+//        _hud.mode = MBProgressHUDModeCustomView;
+//        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+//        _hud.labelText = @"Error";
+//        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
+            [_hud hide:YES afterDelay:3];
         
     }];
     
@@ -274,12 +288,17 @@
             
                         if (!([response[@"code"]integerValue]==0000)) {
             
+                            
+                            
                             NSString *errorMessage = response [@"msg"];
-                            _hud.mode = MBProgressHUDModeCustomView;
-                            _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-                            _hud.labelText = [NSString stringWithFormat:@"错误:%@", errorMessage];
-                            [_hud hide:YES afterDelay:3];
-            
+//                            _hud.mode = MBProgressHUDModeCustomView;
+//                            _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+//                            _hud.labelText = [NSString stringWithFormat:@"错误:%@", errorMessage];
+                            //[_hud hide:YES afterDelay:3];
+                            [_hud hide:YES];
+                            [UIAlertView bk_showAlertViewWithTitle:@"错误" message: errorMessage cancelButtonTitle:@"确定" otherButtonTitles:nil handler:nil];
+
+                            
                             return;
                         }
             
@@ -287,12 +306,18 @@
                         [weakSelf.navigationController popViewControllerAnimated:YES];
   
                     } failure:^(NSError *err) {
+
                         
-                        _hud.mode = MBProgressHUDModeCustomView;
-                        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
-                        _hud.labelText = @"Error";
-                        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
-                        [_hud hide:YES afterDelay:3];
+                        
+                        [UIAlertView bk_showAlertViewWithTitle:@"提示" message: err.userInfo[NSLocalizedDescriptionKey] cancelButtonTitle:@"确定" otherButtonTitles:nil handler:nil];
+                        
+                        
+//                        
+//                        _hud.mode = MBProgressHUDModeCustomView;
+//                        _hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HUD-error"]];
+//                        _hud.labelText = @"Error";
+//                        _hud.detailsLabelText = err.userInfo[NSLocalizedDescriptionKey];
+                            [_hud hide:YES];
                         
                     }];
     
