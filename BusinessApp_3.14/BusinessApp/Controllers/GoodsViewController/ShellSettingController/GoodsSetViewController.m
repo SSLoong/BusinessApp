@@ -169,6 +169,9 @@
     _tbView = [[UITableView alloc] initWithFrame:CGRectMake(0, 108, self.view.bounds.size.width, self.view.bounds.size.height-108) style:UITableViewStylePlain];
     _tbView.dataSource = self;
     _tbView.delegate = self;
+    
+    self.automaticallyAdjustsScrollViewInsets = YES;
+
     _tbView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     _tbView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     

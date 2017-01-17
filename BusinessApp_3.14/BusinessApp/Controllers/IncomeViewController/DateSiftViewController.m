@@ -170,6 +170,10 @@
 - (void)sureButtonPressed{
     [self.navigationController popViewControllerAnimated:YES];
 
+    if (self.sureBtnBlock) {
+        self.sureBtnBlock(_start_time,_end_time);
+    }
+    
 //    NSDictionary *dict =[[NSDictionary alloc] initWithObjectsAndKeys:self.start_time,@"startTime",self.end_time,@"endTime", nil];
 //    
 //    //创建通知

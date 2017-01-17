@@ -33,8 +33,8 @@
     
     self.title = @"客户管理";
     
-     self.navigationController.navigationBar.translucent = NO;
-        
+//     self.navigationController.navigationBar.translucent = NO;
+    //self.edgesForExtendedLayout = UIRectEdgeNone;
     UIBarButtonItem *releaseButon = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(FansScreenBtn:)];
     self.navigationItem.rightBarButtonItem=releaseButon;
     self.nameStr = [[NSString alloc]init];
@@ -60,7 +60,7 @@
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    //self.automaticallyAdjustsScrollViewInsets = YES;
+    self.automaticallyAdjustsScrollViewInsets = YES;
     [self.view addSubview:_tableView];
     
     [self.tableView registerNib: [UINib nibWithNibName:@"FansRcordCell" bundle:nil] forCellReuseIdentifier:@"FansRcordCellID"];
@@ -235,7 +235,6 @@
     
 }
 
-
 - (void)pushToDetails:(NSIndexPath *)path
 {
     NSDictionary * dic = self.data[path.row];
@@ -253,7 +252,7 @@
 {
     NSDictionary * dic = self.data[path.row];
     
-    EditorNameVC * vc = VCWithStoryboardNameAndVCIdentity(@"StoreInfo", @"EditorNameVC");
+    EditorNameVC * vc = VCWithStoryboardNameAndVCIdentity(@"StoreIn fo", @"EditorNameVC");
     vc.hidesBottomBarWhenPushed = YES;
     vc.customerID = dic[@"id"];
     [self.navigationController pushViewController:vc animated:YES];

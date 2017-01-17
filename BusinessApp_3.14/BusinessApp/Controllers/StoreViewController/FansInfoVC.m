@@ -86,6 +86,8 @@
     _tableView.allowsSelection = NO;
     _tableView.tableHeaderView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     _tableView.tableFooterView = [[UIView alloc]init];
+    [self.view addSubview:_tableView];
+
     
     [self.tableView registerNib: [UINib nibWithNibName:@"FansNameCell" bundle:nil]forCellReuseIdentifier:@"FansNameCellID"];
     [self.tableView registerNib: [UINib nibWithNibName:@"FansConsumeCell" bundle:nil]forCellReuseIdentifier:@"FansConsumeCellID"];
@@ -93,9 +95,10 @@
     [self.tableView registerNib: [UINib nibWithNibName:@"FansGoodsCell" bundle:nil]forCellReuseIdentifier:@"FansGoodsCellID"];
     
     
-    
-    [self.view addSubview:_tableView];
-    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+
     _tableView .mj_header = ({
         MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
         header.lastUpdatedTimeLabel.hidden = YES;

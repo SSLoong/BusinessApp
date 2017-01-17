@@ -14,6 +14,9 @@
 
 @property(nonatomic,copy)NSString *award;
 
+@property(nonatomic,copy)NSString *award_type;
+
+
 @property(nonatomic,copy)NSString *end_time;
 
 @property(nonatomic,copy)NSString *goods_type;

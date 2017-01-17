@@ -53,8 +53,8 @@
 
     NSString *endTime = [AppUtil getEndTime];
     
-    return [NSString stringWithFormat:@"%@01-01 00:00",[endTime substringToIndex:5]];
-    
+    //return [NSString stringWithFormat:@"%@01-01 00:00",[endTime substringToIndex:5]];
+    return [NSString stringWithFormat:@"2016-01-01 00:00"];
 }
 
 +(NSString *)getEndTime{

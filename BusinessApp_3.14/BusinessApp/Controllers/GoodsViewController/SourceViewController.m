@@ -35,6 +35,7 @@
     
     //self.navigationController.navigationBarHidden = NO;
     
+
     [super viewWillDisappear:animated];
     
     if ([_activityView isAnimating]) {
@@ -199,7 +200,7 @@
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     // 判断要显示的控制器是否是自己
     BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
-    
+       
     [self.navigationController setNavigationBarHidden:isShowHomePage animated:YES];
 }
 

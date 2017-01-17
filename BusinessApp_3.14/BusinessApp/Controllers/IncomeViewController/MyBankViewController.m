@@ -317,7 +317,22 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    
+    if(self.chooseBank.length !=0){
+        
+        
+        BankListModel *model = self.dataArray[indexPath.row];
+        
+        if (self.bankString) {
+            self.bankString(model.open_branch,model.bank_card,model.sId);
+        }
+        [self.navigationController popViewControllerAnimated:YES];
+        return;
+    }
+
+    
     if (indexPath.section == 0) {
+        
         BankListModel *model = self.dataArray[indexPath.row];
         
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"AddBank" bundle:nil];
@@ -347,18 +362,7 @@
         
         [self.navigationController pushViewController:vc animated:YES];
 
-    }else if(self.chooseBank.length !=0){
-    
-        
-        BankListModel *model = self.dataArray[indexPath.row];
-        
-        if (self.bankString) {
-            self.bankString(model.open_branch,model.bank_card,model.sId);
-        }
-        [self.navigationController popViewControllerAnimated:YES];
-    
-    }
-}
+    }}
 
 
 
